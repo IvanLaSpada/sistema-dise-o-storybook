@@ -1,1 +1,37 @@
-.ds-button { font-family: var(--font-family-base); background-color: var(--color-brand-primary); color: var(--color-text-on-primary); padding: var(--spacing-sm) var(--spacing-md); border: 1px solid transparent; border-radius: var(--border-radius-md); font-size: 14px; font-weight: 600; cursor: pointer; transition: background-color 0.2s ease; } .ds-button:hover { background-color: var(--color-brand-primary-hover); }
+@import './tokens.css';
+@font-face { font-family: 'Roboto'; src: url('./assets/roboto-regular.ttf') format('truetype'); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Roboto'; src: url('./assets/roboto-medium.ttf') format('truetype'); font-style: normal; font-weight: 500; font-display: swap; }
+.ds-button {
+  --button-height: 40px; --button-width: 104px; --button-padding: 16px;
+  --button-font: 14px; --button-line: 20px; --button-icon: 20px; --button-gap: 8px;
+  --button-weight: 400; --button-tracking: 0px;
+  --button-bg: #3061af; --button-hover: #3f75ce; --button-text: #fff; --button-border: transparent;
+  box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--button-gap); min-width: var(--button-width); min-height: var(--button-height);
+  max-width: 100%; padding: 0 var(--button-padding); margin: 0;
+  border: 0; box-shadow: inset 0 0 0 2px var(--button-border); border-radius: 16px;
+  background: var(--button-bg); color: var(--button-text);
+  font-family: var(--font-family-base); font-size: var(--button-font); font-weight: var(--button-weight);
+  line-height: var(--button-line); letter-spacing: var(--button-tracking); text-align: center;
+  cursor: pointer; vertical-align: middle; -webkit-tap-highlight-color: transparent;
+}
+.ds-button[data-size='S'] { --button-height: 32px; --button-width: 80px; --button-padding: 12px; --button-font: 12px; --button-line: 16px; --button-icon: 16px; --button-weight: 500; --button-tracking: .1px; }
+.ds-button[data-size='L'] { --button-height: 48px; --button-width: 128px; --button-padding: 20px; --button-font: 16px; --button-line: 24px; --button-icon: 24px; --button-gap: 12px; --button-weight: 400; --button-tracking: 0px; }
+.ds-button[data-size='XL'] { --button-height: 56px; --button-width: 160px; --button-padding: 24px; --button-font: 18px; --button-line: 24px; --button-icon: 28px; --button-gap: 12px; --button-weight: 400; --button-tracking: 0px; }
+.ds-button[data-style='Secundario'] { --button-bg: #393939; --button-hover: #505050; }
+.ds-button[data-style='Terciario'] { --button-bg: transparent; --button-hover: #e6e6e6; --button-text: #393939; --button-border: #393939; }
+.ds-button[data-style='Link'] { --button-bg: transparent; --button-hover: #cfdcf6; --button-text: #3061af; }
+.ds-button[data-style='Peligro'] { --button-bg: #e53935; --button-hover: #ea5a56; }
+.ds-button:not(:disabled):hover, .ds-button[data-state='Hover'] { background: var(--button-hover); }
+.ds-button:focus-visible { outline: 2px solid #3061af; outline-offset: 3px; }
+.ds-button:disabled { opacity: .3; cursor: not-allowed; }
+.ds-button__icon { display: block; flex: 0 0 var(--button-icon); width: var(--button-icon); height: var(--button-icon); background: currentColor; mask: url('./assets/stars.svg') center / contain no-repeat; }
+.ds-button__label { min-width: 0; overflow-wrap: anywhere; padding: 4px 0; }
+.ds-button--icon-only { min-width: var(--button-height); width: var(--button-height); height: var(--button-height); padding: 0; flex-shrink: 0; }
+.ds-button-demo { display: grid; justify-items: start; gap: 24px; }
+.ds-button-demo__status { margin: 0; color: #464646; font: 14px/20px var(--font-family-base); }
+.ds-button-gallery { display: grid; grid-template-columns: repeat(4, minmax(160px, 1fr)); gap: 24px; max-width: 1100px; font-family: var(--font-family-base); }
+.ds-button-gallery__item { min-width: 0; padding: 8px 0; }
+.ds-button-gallery__caption { margin: 0 0 12px; color: #464646; font-size: 12px; line-height: 18px; }
+@media (max-width: 980px) { .ds-button-gallery { grid-template-columns: repeat(2, minmax(160px, 1fr)); } }
+@media (max-width: 420px) { .ds-button-gallery { grid-template-columns: minmax(0, 1fr); } }
