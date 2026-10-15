@@ -1,0 +1,103 @@
+@import './tokens.css';
+@font-face {
+  font-family: 'Roboto'; font-style: normal; font-weight: 400;
+  font-display: swap; src: url('./assets/roboto-regular.ttf') format('truetype');
+}
+
+/* Valores del set Text Field, página 07. Inputs, en Figma DGSIAF. */
+.ds-input {
+  --input-height: 40px;
+  --input-font-size: 14px;
+  --input-line-height: 20px;
+  --input-label-size: 12px;
+  --input-label-height: 16px;
+  --input-padding: 16px;
+  --input-border: #6d6d6d;
+  --input-background: #fff;
+  width: 240px;
+  max-width: 100%;
+  color: #000;
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  padding-top: 8px;
+}
+.ds-input, .ds-input * { box-sizing: border-box; }
+.ds-input--full { width: 100%; }
+.ds-input[data-size='S'] {
+  --input-height: 32px; --input-font-size: 12px; --input-line-height: 16px;
+  --input-label-size: 10px; --input-label-height: 12px; --input-padding: 12px;
+}
+.ds-input[data-size='L'] { --input-height: 48px; --input-font-size: 16px; --input-line-height: 24px; }
+.ds-input[data-size='XL'] {
+  --input-height: 56px; --input-font-size: 18px; --input-line-height: 24px;
+  --input-label-size: 14px; --input-label-height: 20px; --input-padding: 24px;
+}
+.ds-input__field {
+  position: relative;
+  height: var(--input-height);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  background: var(--input-background);
+}
+.ds-input__control {
+  display: block; width: 100%; height: 100%; min-width: 0;
+  border: 0; outline: 0; border-radius: inherit;
+  margin: 0; padding: 0 var(--input-padding);
+  background: transparent; color: inherit;
+  font: inherit; font-size: var(--input-font-size); line-height: var(--input-line-height);
+  letter-spacing: .5px;
+}
+.ds-input__control::placeholder { color: #6d6d6d; opacity: 1; }
+.ds-input__label {
+  position: absolute; top: 0; left: calc(var(--input-padding) - 4px);
+  transform: translateY(-50%); padding: 0 4px; max-width: calc(100% - 24px);
+  background: var(--input-background); color: #464646;
+  font-size: var(--input-label-size); line-height: var(--input-label-height);
+  letter-spacing: .4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  cursor: text;
+}
+.ds-input[data-content='Label'] .ds-input__control:placeholder-shown:not(:focus) + .ds-input__label {
+  top: 50%; transform: translateY(-50%); background: transparent;
+  font-size: var(--input-font-size); line-height: var(--input-line-height); letter-spacing: .5px;
+}
+.ds-input[data-state='Enfocado'] .ds-input__field,
+.ds-input:not([data-state='Deshabilitado']) .ds-input__field:focus-within {
+  border-color: #3061af; box-shadow: inset 0 0 0 2px #3061af;
+}
+.ds-input[data-state='Enfocado'][data-content='Label'] .ds-input__control:placeholder-shown + .ds-input__label {
+  top: 0; font-size: var(--input-label-size); line-height: var(--input-label-height);
+  background: var(--input-background);
+}
+.ds-input[data-state='Error'] .ds-input__field,
+.ds-input[data-state='Error'] .ds-input__field:focus-within { border-color: #e53935; box-shadow: none; }
+.ds-input[data-state='Error'] .ds-input__control { padding-right: 36px; }
+.ds-input__error-icon {
+  position: absolute; right: 2px; top: 50%; transform: translateY(-50%);
+  width: 24px; height: 24px; background: #e53935;
+  mask: url('./assets/error.svg') center / contain no-repeat;
+}
+.ds-input[data-state='Deshabilitado'] { --input-border: #b1b1b1; color: #6d6d6d; }
+.ds-input[data-state='Deshabilitado'] .ds-input__label { color: #6d6d6d; cursor: default; }
+.ds-input__control:disabled { cursor: not-allowed; opacity: 1; -webkit-text-fill-color: #6d6d6d; }
+.ds-input[data-style='Relleno'] .ds-input__field { border-width: 0 0 1px; border-radius: 4px 4px 0 0; }
+.ds-input[data-style='Relleno'][data-state='Deshabilitado'] { --input-background: #e6e6e6; }
+.ds-input[data-style='Relleno'] .ds-input__control { padding-top: var(--input-label-height); }
+.ds-input[data-style='Relleno'] .ds-input__label { top: 4px; transform: none; background: transparent; }
+.ds-input[data-style='Relleno'][data-content='Label'] .ds-input__control:placeholder-shown:not(:focus) { padding-top: 0; }
+.ds-input[data-style='Relleno'][data-state='Enfocado'] .ds-input__field,
+.ds-input[data-style='Relleno'] .ds-input__field:focus-within { box-shadow: inset 0 -2px #3061af; }
+.ds-input[data-style='Relleno'][data-state='Error'] .ds-input__field { box-shadow: none; }
+.ds-input[data-style='Relleno'][data-state='Enfocado'][data-content='Label'] .ds-input__control:placeholder-shown + .ds-input__label {
+  top: 4px; transform: none; background: transparent;
+}
+.ds-input__footer {
+  display: flex; align-items: start; gap: 8px; padding: 4px 16px 0;
+  margin-top: calc(56px - var(--input-height));
+  font-size: var(--input-label-size); line-height: var(--input-label-height); letter-spacing: .4px;
+  overflow-wrap: anywhere;
+}
+.ds-input__support { flex: 1; min-width: 0; }
+.ds-input__counter { margin-left: auto; flex-shrink: 0; white-space: nowrap; color: #6d6d6d; }
+.ds-input-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 40px 32px; max-width: 1100px; padding: 16px 0; font-family: var(--font-family-base); }
+.ds-input-gallery__item { min-width: 0; }
+.ds-input-gallery__caption { margin: 0 0 16px; font-size: 12px; line-height: 18px; color: #464646; }
