@@ -1,0 +1,16 @@
+image: "node:18" 
+
+stages:
+ - deploy 
+ 
+build_storybook:
+  stage: deploy 
+  tags: 
+  - okd
+  script:
+  - npm install 
+  - npx storybook build -o public
+  pages: true
+  artifacts:
+    paths:
+    - public
