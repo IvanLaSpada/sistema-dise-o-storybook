@@ -1,0 +1,15 @@
+{
+  "name": "poc-sistema-de-diseno",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build-storybook": "storybook build -o storybook-static",
+    "storybook": "storybook dev -p 6006"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "7.6.24",
+    "@storybook/html": "7.6.24",
+    "@storybook/html-webpack5": "7.6.24",
+    "storybook": "7.6.24"
+  }
+}
