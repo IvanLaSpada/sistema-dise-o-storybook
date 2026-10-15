@@ -1,0 +1,1 @@
+import './tokens.css'; import './ds-button.css'; export default { title: 'Componentes/Botón', tags: ['autodocs'], }; export const Primario = { render: function (args) { const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'ds-button'; btn.textContent = args.label || 'Botón Primario SIAF'; return btn; }, args: { label: 'Botón Primario SIAF', }, };
