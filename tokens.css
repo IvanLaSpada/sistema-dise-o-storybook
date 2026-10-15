@@ -1,0 +1,14 @@
+:root { 
+    --color-azul-500: #0055a5; 
+    --color-azul-700: #003366; 
+    --color-blanco: #ffffff; 
+    --color-gris-100: #f4f6f8; 
+    --color-gris-300: #cccccc; 
+    --color-brand-primary: var(--color-azul-500); 
+    --color-brand-primary-hover: var(--color-azul-700); 
+    --color-text-on-primary: var(--color-blanco); 
+    --color-border-default: var(--color-gris-300); 
+    --spacing-sm: 8px; 
+    --spacing-md: 16px; 
+    --border-radius-md: 6px; 
+    --font-family-base: 'Roboto', sans-serif; }
