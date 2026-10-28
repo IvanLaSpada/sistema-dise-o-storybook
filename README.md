@@ -57,3 +57,19 @@ El ejemplo anterior “Botón Primario SIAF” fue reemplazado por **Componentes
 
 El estilo Link es una apariencia de botón de acción. La navegación de un producto debe implementarse con enlaces y destinos reales.
 Referencia: [06. Botones en Figma](https://www.figma.com/design/QiyZVheWsrCupfVa8woxdI/?node-id=58673-328).
+# Documentación de uso
+
+Las páginas **Docs** de Botones e Input combinan ejemplos interactivos, controles,
+anatomía, estados, reglas de uso y accesibilidad. **Documentación / Introducción**
+explica cómo navegar el catálogo. Los archivos `Botones.mdx`, `Input.mdx` e
+`Introduccion.mdx` definen estas páginas; `component-guidelines.js` contiene la
+síntesis del PDF **Pautas Diseño Aplicaciones SIAF (4)** aportado por UX el
+28/10/2026 (botones: páginas 16–22; inputs: 24–32).
+
+Se distinguen las pautas del comportamiento implementado. La documentación registra
+las diferencias de radio, tipografía, estados, jerarquías de peligro y posición del
+ícono, los campos especializados pendientes y el anuncio dinámico del contador.
+También señala la contradicción entre la matriz de cancelación de la página 22 y
+las reglas de la página 21. No se modificaron estilos ni comportamientos al añadir
+estas pautas. El PDF original no se distribuye con el catálogo.
+

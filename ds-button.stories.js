@@ -7,16 +7,16 @@ const sizes = ['S', 'M', 'L', 'XL'];
 const states = ['Default', 'Hover', 'Disabled'];
 
 export default {
-  title: 'Componentes/Botones', tags: ['autodocs'],
+  title: 'Componentes/Botones',
   parameters: { docs: { description: { component: 'Botones actualizados de la página 06. Botones de Figma DGSIAF. El hover funciona al pasar el mouse; el control Estado permite fijarlo para revisar el diseño. Disabled usa el atributo nativo y no ejecuta acciones. El estilo Link representa una acción con apariencia de enlace; para navegar en un producto se debe usar un enlace con destino real.' } } },
   args: { estilo: 'Primario', tamano: 'M', estado: 'Default', label: 'Label', mostrarIcono: true, soloIcono: false },
   argTypes: {
-    estilo: { name: 'Estilo', control: 'select', options: styles },
-    tamano: { name: 'Tamaño', control: 'select', options: sizes },
-    estado: { name: 'Estado', control: 'select', options: states },
-    label: { name: 'Etiqueta / nombre accesible', control: 'text' },
-    mostrarIcono: { name: 'Mostrar ícono', control: 'boolean' },
-    soloIcono: { name: 'Solo ícono', control: 'boolean' },
+    estilo: { name: 'Estilo', description: 'Jerarquía de la acción. Peligro se reserva para consecuencias destructivas.', control: 'select', options: styles },
+    tamano: { name: 'Tamaño', description: 'S, M, L o XL. La jerarquía se define por el estilo, no por el tamaño.', control: 'select', options: sizes },
+    estado: { name: 'Estado', description: 'Hover permite inspeccionar el estado. Disabled desactiva el botón nativo.', control: 'select', options: states },
+    label: { name: 'Etiqueta / nombre accesible', description: 'Acción concreta, por ejemplo Guardar cambios. En solo ícono, proporciona el nombre accesible.', control: 'text' },
+    mostrarIcono: { name: 'Mostrar ícono', description: 'Ícono de ejemplo a la izquierda del texto. No se necesita si la etiqueta ya es clara.', control: 'boolean' },
+    soloIcono: { name: 'Solo ícono', description: 'Para acciones reconocibles en espacios reducidos. Siempre requiere una etiqueta accesible.', control: 'boolean' },
   },
   render: args => {
     const wrapper = document.createElement('div');

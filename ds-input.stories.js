@@ -3,7 +3,6 @@ import { createInput } from './ds-input';
 
 export default {
   title: 'Componentes/Input',
-  tags: ['autodocs'],
   render: createInput,
   parameters: {
     docs: { description: { component: 'Campo de texto basado en Text Field de Figma DGSIAF. Escribí o usá Tab para probar el foco real. El estado Enfocado permite comparar su apariencia sin mover el teclado. El error se controla desde el formulario; no aplica reglas de validación propias.' } },
@@ -19,8 +18,10 @@ export default {
     estado: { control: 'select', options: ['Default', 'Enfocado', 'Error', 'Deshabilitado'] },
     contenido: { control: 'select', options: ['Placeholder', 'Label', 'Input'], description: 'Presentación inicial. Input usa el valor; Label flota al escribir o enfocar.' },
     tamano: { name: 'Tamaño', control: 'select', options: ['S', 'M', 'L', 'XL'] },
-    label: { control: 'text' }, placeholder: { control: 'text' }, value: { control: 'text' },
-    supportingText: { name: 'Texto de soporte', control: 'text' },
+    label: { description: 'Etiqueta asociada al campo. Identifica el dato esperado y no se reemplaza por el placeholder.', control: 'text' },
+    placeholder: { description: 'Ejemplo o pista del formato esperado.', control: 'text' },
+    value: { description: 'Valor inicial para la presentación Input. Se puede editar en el ejemplo.', control: 'text' },
+    supportingText: { name: 'Texto de soporte', description: 'Ayuda breve y útil; en Error explica qué corregir. Se asocia con aria-describedby.', control: 'text' },
     mostrarSoporte: { name: 'Mostrar texto de soporte', control: 'boolean' },
     mostrarContador: { name: 'Mostrar contador', control: 'boolean' },
     maxLength: { name: 'Máximo de caracteres', control: { type: 'number', min: 1 } },

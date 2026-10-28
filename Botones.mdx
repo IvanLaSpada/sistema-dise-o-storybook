@@ -1,0 +1,40 @@
+import { Meta, Title, Subtitle, Canvas, Controls, Markdown } from '@storybook/blocks';
+import * as Botones from './ds-button.stories';
+import { buttonUsage, buttonScope } from './component-guidelines';
+
+<Meta of={Botones} name="Docs" />
+
+<Title />
+<Subtitle>Acciones claras, jerarquías consistentes y estados reconocibles.</Subtitle>
+
+Los botones permiten ejecutar tareas. Esta página reúne las pautas del sistema de diseño y ejemplos que podés probar. Las historias del menú lateral conservan todas las variantes.
+
+En esta página: [Probar](#probar-el-componente) · [Variantes](#cuando-usar-cada-variante) · [Anatomía](#anatomia-y-contenido) · [Estados](#estados-e-interaccion) · [Accesibilidad](#accesibilidad) · [Correspondencia con la guía](#correspondencia-con-la-guia).
+
+## Probar el componente
+
+<Canvas of={Botones.Playground} />
+
+### Propiedades
+
+<Controls of={Botones.Playground} />
+
+<Markdown>{buttonUsage}</Markdown>
+
+## Ejemplos de variantes
+
+### Acción complementaria
+
+<Canvas of={Botones.Secundario} />
+
+### Acción destructiva
+
+<Canvas of={Botones.Peligro} />
+
+### Botón de ícono
+
+El nombre accesible debe describir la acción, incluso cuando no haya texto visible.
+
+<Canvas of={Botones.SoloIcono} />
+
+<Markdown>{buttonScope}</Markdown>

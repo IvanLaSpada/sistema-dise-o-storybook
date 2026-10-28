@@ -1,0 +1,40 @@
+import { Meta, Title, Subtitle, Canvas, Controls, Markdown } from '@storybook/blocks';
+import * as Input from './ds-input.stories';
+import { inputUsage, inputScope } from './component-guidelines';
+
+<Meta of={Input} name="Docs" />
+
+<Title />
+<Subtitle>Captura de datos con etiquetas claras, ayuda útil y errores que se pueden corregir.</Subtitle>
+
+Esta página reúne las pautas de formularios y el campo de texto disponible. Probá la escritura y el foco con Tab. Las historias del menú lateral permiten revisar los estados y todas las combinaciones visuales.
+
+En esta página: [Probar](#probar-el-componente) · [Anatomía](#anatomia) · [Estados](#estados-y-mensajes) · [Tipos de campo](#eleccion-del-campo-segun-el-dato) · [Accesibilidad](#accesibilidad) · [Alcance](#alcance-del-componente-disponible).
+
+## Probar el componente
+
+<Canvas of={Input.Playground} />
+
+### Propiedades
+
+<Controls of={Input.Playground} />
+
+<Markdown>{inputUsage}</Markdown>
+
+## Ejemplos de estados
+
+### Error con una indicación concreta
+
+El formulario decide cuándo activar el error; el ejemplo muestra cómo se presenta.
+
+<Canvas of={Input.Error} />
+
+### Contador de caracteres
+
+<Canvas of={Input.ConContador} />
+
+### Campo deshabilitado
+
+<Canvas of={Input.Deshabilitado} />
+
+<Markdown>{inputScope}</Markdown>
