@@ -1,0 +1,23 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as Catalogo from './tokens.stories';
+
+<Meta title="Tokens/Primitivos" />
+
+# Tokens primitivos
+
+Valores base: paletas, radios, tipografía, espaciado y grilla. Son compartidos por las marcas; los colores de cada marca mantienen su propia ruta.
+
+**137 variables importadas de Figma.** Buscá por nombre, referencia o valor. Las muestras son ilustrativas; los números conservan su valor original. En la web, medidas se interpretan en px; columnas y pesos tipográficos no llevan unidad.
+
+<Canvas of={Catalogo.Primitivos} sourceState="none" />
+
+## Fuente y alcance
+
+[Variables del sistema de diseño en Figma](https://www.figma.com/design/QiyZVheWsrCupfVa8woxdI/?node-id=59398-102&view=variables).
+Importación del 30/10/2026: 252 variables en total, con 327 valores contando los dos modos de la colección Componente. Primitivo y Semantico tienen un solo modo compartido.
+
+Se conservan nombres, valores, transparencias y referencias tal como aparecen en Figma. Algunas variables de componente apuntan directamente a primitivos y otras pasan por semánticos: el catálogo refleja esa estructura sin inventar capas intermedias. Los tokens de checkbox, card y otros elementos documentan sus valores; sus componentes todavía no están implementados.
+
+Botones e inputs usan los tokens de color aplicables y los radios primitivos 16 y 4, respectivamente. El resto de sus medidas conserva la implementación existente. Los pesos 300 y 700 están catalogados, pero no se agregaron archivos de fuente nuevos.
+
+Esta es una instantánea verificada, **no una sincronización automática con Figma**. El archivo `design-tokens.json` es la fuente local; `npm run build-tokens` valida referencias y genera las variables CSS. Las descripciones disponibles proceden de las referencias visibles; no se importaron IDs ni scopes de la API.

@@ -1,0 +1,3051 @@
+{
+  "source": {
+    "url": "https://www.figma.com/design/QiyZVheWsrCupfVa8woxdI/?node-id=59398-102&view=variables",
+    "importedAt": "2026-10-30",
+    "method": "Lectura del panel de variables de Figma. Instantánea manual; sin sincronización automática.",
+    "metadata": "Nombres, valores, alias y modos. Descripciones recuperadas de las referencias visibles; no incluye IDs, scopes ni metadatos no expuestos en el panel."
+  },
+  "collections": [
+    {
+      "name": "Componente",
+      "modes": [
+        "cliente-rico",
+        "erecauda"
+      ],
+      "tokens": [
+        {
+          "name": "color/button/primary/background/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/500",
+              "observed": "#3061AF"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/500",
+              "observed": "#006400"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/primary/background/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/400",
+              "observed": "#3F75CE"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/400",
+              "observed": "#338333"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/primary/text/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/inverse/default",
+              "observed": "#FFFFFF"
+            },
+            "erecauda": {
+              "ref": "color/text/inverse/default",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/secondary/background/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/secondary-gray/500",
+              "observed": "#393939"
+            },
+            "erecauda": {
+              "ref": "palette/brand/secondary-gray/500",
+              "observed": "#393939"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/secondary/background/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/secondary-gray/400",
+              "observed": "#505050"
+            },
+            "erecauda": {
+              "ref": "palette/brand/secondary-gray/400",
+              "observed": "#505050"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/secondary/text/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/inverse/default",
+              "observed": "#FFFFFF"
+            },
+            "erecauda": {
+              "ref": "color/text/inverse/default",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/tertiary/background/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/0",
+              "observed": "#FFFFFF, 0%"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/0",
+              "observed": "#FFFFFF, 0%"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/tertiary/background/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/subtle",
+              "observed": "#E6E6E6"
+            },
+            "erecauda": {
+              "ref": "color/surface/subtle",
+              "observed": "#E6E6E6"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/tertiary/border/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/secondary-gray/500",
+              "observed": "#393939"
+            },
+            "erecauda": {
+              "ref": "palette/brand/secondary-gray/500",
+              "observed": "#393939"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/tertiary/text/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/secondary-gray/500",
+              "observed": "#393939"
+            },
+            "erecauda": {
+              "ref": "palette/brand/secondary-gray/500",
+              "observed": "#393939"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/link/text/primary/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/500",
+              "observed": "#3061AF"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/500",
+              "observed": "#006400"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/link/text/secondary/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/secondary-gray/500",
+              "observed": "#393939"
+            },
+            "erecauda": {
+              "ref": "palette/brand/secondary-gray/500",
+              "observed": "#393939"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/link/background/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/0",
+              "observed": "#FFFFFF, 0%"
+            },
+            "erecauda": {
+              "ref": "palette/brand/cliente-rico/blue/0",
+              "observed": "#FFFFFF, 0%"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/link/background/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/50",
+              "observed": "#CFDCF6"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/50",
+              "observed": "#F4FFF5"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/danger/background/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/danger-default",
+              "observed": "#E53935"
+            },
+            "erecauda": {
+              "ref": "color/surface/danger-default",
+              "observed": "#E53935"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/danger/background/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/danger-hover",
+              "observed": "#EA5A56"
+            },
+            "erecauda": {
+              "ref": "color/surface/danger-hover",
+              "observed": "#EA5A56"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/danger/text/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/inverse/default",
+              "observed": "#FFFFFF"
+            },
+            "erecauda": {
+              "ref": "color/text/inverse/default",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/icon/primary/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/500",
+              "observed": "#3061AF"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/500",
+              "observed": "#006400"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/button/icon/primary/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/400",
+              "observed": "#3F75CE"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/400",
+              "observed": "#338333"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/checkbox/background/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/0",
+              "observed": "#FFFFFF, 0%"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/0",
+              "observed": "#FFFFFF, 0%"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/checkbox/background/checked",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/500",
+              "observed": "#3061AF"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/500",
+              "observed": "#006400"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/checkbox/background/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/50",
+              "observed": "#CFDCF6"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/50",
+              "observed": "#F4FFF5"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/checkbox/background/disabled",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/disabled",
+              "observed": "#D5D5D5"
+            },
+            "erecauda": {
+              "ref": "color/input/background/disabled",
+              "observed": "#D5D5D5"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/checkbox/border/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/secondary-gray/500",
+              "observed": "#393939"
+            },
+            "erecauda": {
+              "ref": "palette/brand/secondary-gray/500",
+              "observed": "#393939"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/checkbox/border/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/400",
+              "observed": "#3F75CE"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/400",
+              "observed": "#338333"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/checkbox/border/disabled",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/secondary-gray/50",
+              "observed": "#ACACAC"
+            },
+            "erecauda": {
+              "ref": "palette/brand/secondary-gray/50",
+              "observed": "#ACACAC"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/checkbox/icon/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/icon/inverse",
+              "observed": "#FFFFFF"
+            },
+            "erecauda": {
+              "ref": "color/icon/inverse",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/checkbox/icon/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/400",
+              "observed": "#3F75CE"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/400",
+              "observed": "#338333"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/checkbox/text/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/primary/default",
+              "observed": "#000000"
+            },
+            "erecauda": {
+              "ref": "color/text/primary/default",
+              "observed": "#000000"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/input/background/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/default",
+              "observed": "#FFFFFF"
+            },
+            "erecauda": {
+              "ref": "color/surface/default",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/input/background/disabled",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/subtle",
+              "observed": "#E6E6E6"
+            },
+            "erecauda": {
+              "ref": "color/surface/disabled",
+              "observed": "#D5D5D5"
+            }
+          },
+          "description": "Fondo del campo de texto deshabilitado"
+        },
+        {
+          "name": "color/input/border/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/border/strong",
+              "observed": "#6D6D6D"
+            },
+            "erecauda": {
+              "ref": "color/border/strong",
+              "observed": "#6D6D6D"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/input/border/focus",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/500",
+              "observed": "#3061AF"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/500",
+              "observed": "#006400"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/input/border/error",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/feedback/error/border/default",
+              "observed": "#E53935"
+            },
+            "erecauda": {
+              "ref": "color/feedback/error/border/default",
+              "observed": "#E53935"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/input/text/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/primary/default",
+              "observed": "#000000"
+            },
+            "erecauda": {
+              "ref": "color/text/primary/default",
+              "observed": "#000000"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/input/text/placeholder",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/disabled/default",
+              "observed": "#6D6D6D"
+            },
+            "erecauda": {
+              "ref": "color/text/disabled/default",
+              "observed": "#6D6D6D"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/input/text/label",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/secondary/default",
+              "observed": "#464646"
+            },
+            "erecauda": {
+              "ref": "color/text/secondary/default",
+              "observed": "#464646"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/card/background/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/default",
+              "observed": "#FFFFFF"
+            },
+            "erecauda": {
+              "ref": "color/surface/default",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/card/border/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/border/subtle",
+              "observed": "#E6E6E6"
+            },
+            "erecauda": {
+              "ref": "color/border/subtle",
+              "observed": "#E6E6E6"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/card/text/title",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/primary/default",
+              "observed": "#000000"
+            },
+            "erecauda": {
+              "ref": "color/text/primary/default",
+              "observed": "#000000"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/card/text/body",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/secondary/default",
+              "observed": "#464646"
+            },
+            "erecauda": {
+              "ref": "color/text/secondary/default",
+              "observed": "#464646"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/chip/background/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/100",
+              "observed": "#A9C1EE"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/50",
+              "observed": "#F4FFF5"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/chip/background/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/200",
+              "observed": "#85A7E4"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/100",
+              "observed": "#CCE0CC"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/chip/background/disabled",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/subtle",
+              "observed": "#E6E6E6"
+            },
+            "erecauda": {
+              "ref": "color/surface/subtle",
+              "observed": "#E6E6E6"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/chip/border/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/300",
+              "observed": "#628DDA"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/300",
+              "observed": "#66A266"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/chip/border/disabled",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/border/disabled",
+              "observed": "#B1B1B1"
+            },
+            "erecauda": {
+              "ref": "color/border/disabled",
+              "observed": "#B1B1B1"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/chip/text/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/800",
+              "observed": "#132649"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/700",
+              "observed": "#003C00"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/chip/text/disabled",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/disabled/default",
+              "observed": "#6D6D6D"
+            },
+            "erecauda": {
+              "value": "FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/list/background/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/default",
+              "observed": "#FFFFFF"
+            },
+            "erecauda": {
+              "ref": "color/surface/default",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/list/item/background/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/default",
+              "observed": "#FFFFFF"
+            },
+            "erecauda": {
+              "ref": "color/surface/default",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/list/item/background/active",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/500",
+              "observed": "#3061AF"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/50",
+              "observed": "#F4FFF5"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/list/item/background/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/50",
+              "observed": "#CFDCF6"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/500",
+              "observed": "#006400"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/list/item/text/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/primary/default",
+              "observed": "#000000"
+            },
+            "erecauda": {
+              "ref": "color/text/primary/default",
+              "observed": "#000000"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/list/item/text/active",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/inverse/default",
+              "observed": "#FFFFFF"
+            },
+            "erecauda": {
+              "value": "FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/list/item/icon/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/gray/900",
+              "observed": "#000000"
+            },
+            "erecauda": {
+              "ref": "palette/gray/900",
+              "observed": "#000000"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/list/item/icon/active",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/icon/inverse",
+              "observed": "#FFFFFF"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/600",
+              "observed": "#005000"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/tab/background/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/background/subtle",
+              "observed": "#F8F8F8"
+            },
+            "erecauda": {
+              "ref": "color/background/subtle",
+              "observed": "#F8F8F8"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/tab/background/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/subtle",
+              "observed": "#E6E6E6"
+            },
+            "erecauda": {
+              "ref": "color/surface/subtle",
+              "observed": "#E6E6E6"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/tab/background/pressed",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/700",
+              "observed": "#1C396B"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/700",
+              "observed": "#003C00"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/tab/text/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/primary/default",
+              "observed": "#000000"
+            },
+            "erecauda": {
+              "ref": "color/text/primary/default",
+              "observed": "#000000"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/tab/text/pressed",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/inverse/default",
+              "observed": "#FFFFFF"
+            },
+            "erecauda": {
+              "ref": "color/text/inverse/default",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/tab/indicator/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/500",
+              "observed": "#3061AF"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/500",
+              "observed": "#006400"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/table/background/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/default",
+              "observed": "#FFFFFF"
+            },
+            "erecauda": {
+              "ref": "color/surface/default",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/table/background/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/50",
+              "observed": "#CFDCF6"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/50",
+              "observed": "#F4FFF5"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/table/background/selected",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/50",
+              "observed": "#CFDCF6"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/50",
+              "observed": "#F4FFF5"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/table/background/disabled",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/disabled",
+              "observed": "#D5D5D5"
+            },
+            "erecauda": {
+              "ref": "color/surface/subtle",
+              "observed": "#E6E6E6"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/table/background/header",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/500",
+              "observed": "#3061AF"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/500",
+              "observed": "#006400"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/table/background/stripe",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/surface/subtle",
+              "observed": "#E6E6E6"
+            },
+            "erecauda": {
+              "ref": "color/surface/subtle",
+              "observed": "#E6E6E6"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/table/text/primary",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/primary/default",
+              "observed": "#000000"
+            },
+            "erecauda": {
+              "ref": "color/text/primary/default",
+              "observed": "#000000"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/table/text/secondary",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/secondary/default",
+              "observed": "#464646"
+            },
+            "erecauda": {
+              "ref": "color/text/secondary/default",
+              "observed": "#464646"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/table/text/disabled",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/disabled/default",
+              "observed": "#6D6D6D"
+            },
+            "erecauda": {
+              "ref": "color/text/disabled/default",
+              "observed": "#6D6D6D"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/table/text/header",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/text/inverse/default",
+              "observed": "#FFFFFF"
+            },
+            "erecauda": {
+              "ref": "color/text/inverse/default",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/table/border/default",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "color/border/default",
+              "observed": "#B1B1B1"
+            },
+            "erecauda": {
+              "ref": "color/border/default",
+              "observed": "#B1B1B1"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/table/border/selected",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/500",
+              "observed": "#3061AF"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/500",
+              "observed": "#006400"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/table/border/hover",
+          "type": "color",
+          "values": {
+            "cliente-rico": {
+              "ref": "palette/brand/cliente-rico/blue/50",
+              "observed": "#CFDCF6"
+            },
+            "erecauda": {
+              "ref": "palette/brand/erecauda/green/50",
+              "observed": "#F4FFF5"
+            }
+          },
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Primitivo",
+      "modes": [
+        "Sistema de Diseño"
+      ],
+      "tokens": [
+        {
+          "name": "grid/columns/desktop",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 12
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "grid/columns/mobile",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 4
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "grid/columns/tablet",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 8
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "grid/gutter/mobile",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 16
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "grid/gutter/tablet",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 16
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "grid/gutter/desktop",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 24
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "grid/margin/mobile",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 16
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "grid/margin/tablet",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 32
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "grid/margin/desktop",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 48
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "border/radius/4",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 4
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "border/radius/8",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 8
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "border/radius/16",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 16
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "border/radius/20",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 20
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "border/radius/24",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 24
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "border/radius/28",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 28
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "border/radius/32",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 32
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "border/radius/full",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 999
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/size/14",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 14
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/size/16",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 16
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/size/24",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 24
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/size/28",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 28
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/size/32",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 32
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/size/40",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 40
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/size/48",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 48
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/size/56",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 56
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/size/64",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 64
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/size/72",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 72
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/family/roboto",
+          "type": "string",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "Roboto"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/line-height/20",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 20
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/line-height/24",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 24
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/line-height/28",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 28
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/line-height/32",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 32
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/line-height/36",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 36
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/line-height/40",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 40
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/line-height/48",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 48
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/line-height/64",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 64
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/line-height/72",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 72
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/line-height/80",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 80
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/weight/300",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 300
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/weight/400",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 400
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/weight/500",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 500
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "font/weight/700",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 700
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "spacing/8",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 8
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "spacing/16",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 16
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "spacing/20",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 20
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "spacing/24",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 24
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "spacing/28",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 28
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "spacing/32",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 32
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "spacing/40",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 40
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "spacing/48",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 48
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "spacing/56",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 56
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "spacing/64",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 64
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "spacing/72",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 72
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "spacing/88",
+          "type": "number",
+          "values": {
+            "Sistema de Diseño": {
+              "value": 88
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/brand/secondary-gray/50",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#ACACAC",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta secondary-gray tono 50. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/secondary-gray/100",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#959595",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/brand/secondary-gray/200",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#7E7E7E",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/brand/secondary-gray/300",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#676767",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/brand/secondary-gray/400",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#505050",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta secondary-gray tono 400. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/secondary-gray/500",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#393939",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta secondary-gray tono 500. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/secondary-gray/600",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#2E2E2E",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta secondary-gray tono 600. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/secondary-gray/700",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#232323",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/brand/secondary-gray/800",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#191919",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/brand/secondary-gray/900",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#0E0E0E",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/brand/cliente-rico/blue/0",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#FFFFFF",
+              "alpha": 0.0
+            }
+          },
+          "description": "Paleta marca Cliente Rico — blue 0. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/cliente-rico/blue/50",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#CFDCF6",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca Cliente Rico — blue 50. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/cliente-rico/blue/100",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#A9C1EE",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca Cliente Rico — blue 100. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/cliente-rico/blue/200",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#85A7E4",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca Cliente Rico — blue 200. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/cliente-rico/blue/300",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#628DDA",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca Cliente Rico — blue 300. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/cliente-rico/blue/400",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#3F75CE",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca Cliente Rico — blue 400. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/cliente-rico/blue/500",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#3061AF",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca Cliente Rico — blue 500. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/cliente-rico/blue/600",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#264D8D",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/brand/cliente-rico/blue/700",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#1C396B",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca Cliente Rico — blue 700. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/cliente-rico/blue/800",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#132649",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca Cliente Rico — blue 800. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/cliente-rico/blue/900",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#0A1427",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/brand/erecauda/green/0",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#FFFFFF",
+              "alpha": 0.0
+            }
+          },
+          "description": "Paleta marca eRecauda — green 0. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/erecauda/green/50",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#F4FFF5",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca eRecauda — green 50. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/erecauda/green/100",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#CCE0CC",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca eRecauda — green 100. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/erecauda/green/200",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#99C199",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/brand/erecauda/green/300",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#66A266",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca eRecauda — green 300. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/erecauda/green/400",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#338333",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca eRecauda — green 400. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/erecauda/green/500",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#006400",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca eRecauda — green 500. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/erecauda/green/600",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#005000",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca eRecauda — green 600. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/erecauda/green/700",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#003C00",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta marca eRecauda — green 700. Token primitivo, no usar directamente en componentes"
+        },
+        {
+          "name": "palette/brand/erecauda/green/800",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#002800",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/brand/erecauda/green/900",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#001400",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/yellow/50",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#FFFAED",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta yellow 50. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/yellow/100",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#FFEEBF",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/yellow/200",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#FFD291",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/yellow/300",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#FFD663",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/yellow/400",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#FFCB35",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/yellow/500",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#FFC107",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta yellow 500. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/yellow/600",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#D69E03",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/yellow/700",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#A67A04",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/yellow/800",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#785705",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/yellow/900",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#4B3604",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta yellow 900. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/red/50",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#FBDDDC",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta red 50. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/red/100",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#F7BCBA",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/red/200",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#F39B99",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/red/300",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#EE7A77",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/red/400",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#EA5A56",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta red 400. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/red/500",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#E53935",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta red 500. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/red/600",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#CF221D",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/red/700",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#A51D1A",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/red/800",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#7C1815",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/red/900",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#541110",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta red 900. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/gray/50",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#FFFFFF",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta gray 50. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/gray/100",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#F8F8F8",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta gray 100. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/gray/200",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#E6E6E6",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta gray 200. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/gray/300",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#D5D5D5",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta gray 300. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/gray/400",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#B1B1B1",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta gray 400. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/gray/500",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#909090",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta gray 500. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/gray/600",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#6D6D6D",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta gray 600. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/gray/700",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#464646",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta gray 700. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/gray/800",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#222222",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/gray/900",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#000000",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta gray 900. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/gray/950",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#000000",
+              "alpha": 0.5
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/cyan/50",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#E4FBFF",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta cyan 50. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/cyan/100",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#B7F3FE",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/cyan/200",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#8AEBFD",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/cyan/300",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#5FE1FA",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/cyan/400",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#35D7F6",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/cyan/500",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#0DCAF0",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta cyan 500. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/cyan/600",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#0EA5C1",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/cyan/700",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#0D8194",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/cyan/800",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#0B5C69",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/cyan/900",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#08373E",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta cyan 900. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/green/50",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#C1FFDF",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta green 50. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/green/100",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#8BFBC3",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/green/200",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#59F4A7",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/green/300",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#2AE98D",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/green/400",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#1BBE71",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/green/500",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#198754",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta green 500. Token primitivo, no usar directamente"
+        },
+        {
+          "name": "palette/green/600",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#156C46",
+              "alpha": 1.0
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/green/700",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#115137",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/green/800",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#0C3726",
+              "alpha": 1
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "palette/green/900",
+          "type": "color",
+          "values": {
+            "Sistema de Diseño": {
+              "value": "#071D15",
+              "alpha": 1
+            }
+          },
+          "description": "Paleta green 900. Token primitivo, no usar directamente"
+        }
+      ]
+    },
+    {
+      "name": "Semantico",
+      "modes": [
+        "default"
+      ],
+      "tokens": [
+        {
+          "name": "color/feedback/success/border/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/green/500",
+              "observed": "#198754"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/success/text/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/green/900",
+              "observed": "#071D15"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/success/icon/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/green/900",
+              "observed": "#071D15"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/success/surface/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/green/50",
+              "observed": "#C1FFDF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/error/border/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/red/500",
+              "observed": "#E53935"
+            }
+          },
+          "description": "Color de borde para mensajes de error"
+        },
+        {
+          "name": "color/feedback/error/text/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/red/900",
+              "observed": "#541110"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/error/icon/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/red/900",
+              "observed": "#541110"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/error/surface/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/red/50",
+              "observed": "#FBDDDC"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/warning/border/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/yellow/500",
+              "observed": "#FFC107"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/warning/text/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/yellow/900",
+              "observed": "#4B3604"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/warning/icon/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/yellow/900",
+              "observed": "#4B3604"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/warning/surface/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/yellow/50",
+              "observed": "#FFFAED"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/info/border/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/cyan/500",
+              "observed": "#0DCAF0"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/info/text/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/cyan/900",
+              "observed": "#08373E"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/info/icon/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/cyan/900",
+              "observed": "#08373E"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/feedback/info/surface/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/cyan/50",
+              "observed": "#E4FBFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/surface/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/50",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": "Superficie principal de la aplicación (fondo de página)"
+        },
+        {
+          "name": "color/surface/subtle",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/200",
+              "observed": "#E6E6E6"
+            }
+          },
+          "description": "Superficie sutil para diferenciar secciones (fondo de cards, sidebars)"
+        },
+        {
+          "name": "color/surface/disabled",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/300",
+              "observed": "#D5D5D5"
+            }
+          },
+          "description": "Token semántico: surface → disabled"
+        },
+        {
+          "name": "color/surface/overlay",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/950",
+              "observed": "#000000, 50%"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/surface/inverse",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/900",
+              "observed": "#000000"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/surface/danger-default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/red/500",
+              "observed": "#E53935"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/surface/danger-hover",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/red/400",
+              "observed": "#EA5A56"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/background/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/50",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/background/subtle",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/100",
+              "observed": "#F8F8F8"
+            }
+          },
+          "description": "Token semántico: background → subtle"
+        },
+        {
+          "name": "color/border/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/400",
+              "observed": "#B1B1B1"
+            }
+          },
+          "description": "Color de borde por defecto para separadores y contenedores"
+        },
+        {
+          "name": "color/border/subtle",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/200",
+              "observed": "#E6E6E6"
+            }
+          },
+          "description": "Color de borde sutil para divisores de baja jerarquía"
+        },
+        {
+          "name": "color/border/strong",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/600",
+              "observed": "#6D6D6D"
+            }
+          },
+          "description": "Color de borde fuerte para inputs en foco o elementos activos"
+        },
+        {
+          "name": "color/border/disabled",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/400",
+              "observed": "#B1B1B1"
+            }
+          },
+          "description": "Token semántico: border → disabled"
+        },
+        {
+          "name": "color/icon/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/brand/secondary-gray/600",
+              "observed": "#2E2E2E"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/icon/subtle",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/500",
+              "observed": "#909090"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/icon/disabled",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/400",
+              "observed": "#B1B1B1"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/icon/inverse",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/50",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": "Token semántico: icon → inverse"
+        },
+        {
+          "name": "color/icon/danger",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/red/500",
+              "observed": "#E53935"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/text/error",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/red/500",
+              "observed": "#E53935"
+            }
+          },
+          "description": ""
+        },
+        {
+          "name": "color/text/primary/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/900",
+              "observed": "#000000"
+            }
+          },
+          "description": "Color principal de texto. Usar para títulos y contenido destacado"
+        },
+        {
+          "name": "color/text/secondary/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/700",
+              "observed": "#464646"
+            }
+          },
+          "description": "Color secundario de texto. Usar para descripciones y texto de soporte"
+        },
+        {
+          "name": "color/text/disabled/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/600",
+              "observed": "#6D6D6D"
+            }
+          },
+          "description": "Color de texto deshabilitado. Indica elementos no interactivos"
+        },
+        {
+          "name": "color/text/inverse/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/50",
+              "observed": "#FFFFFF"
+            }
+          },
+          "description": "Color de texto invertido. Usar sobre fondos oscuros"
+        },
+        {
+          "name": "color/text/subtle/default",
+          "type": "color",
+          "values": {
+            "default": {
+              "ref": "palette/gray/600",
+              "observed": "#6D6D6D"
+            }
+          },
+          "description": ""
+        }
+      ]
+    }
+  ]
+}
