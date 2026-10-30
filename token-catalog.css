@@ -1,0 +1,26 @@
+@import './design-tokens.css';
+.token-catalog { color: #222; font: 14px/1.5 Roboto, Arial, sans-serif; max-width: 1280px; }
+.token-catalog * { box-sizing: border-box; }
+.token-catalog__toolbar { display: flex; flex-wrap: wrap; gap: 20px; align-items: end; padding: 16px; background: #f8f8f8; border: 1px solid #ddd; border-radius: 8px; }
+.token-catalog__toolbar label { display: grid; gap: 6px; font-weight: 500; }
+.token-catalog__toolbar label:first-child { flex: 1; min-width: 200px; }
+.token-catalog__toolbar input, .token-catalog__toolbar select { min-height: 40px; padding: 8px 12px; border: 1px solid #6d6d6d; border-radius: 4px; background: #fff; color: #222; font: inherit; }
+.token-catalog__toolbar input:focus-visible, .token-catalog__toolbar select:focus-visible { outline: 2px solid #3061af; outline-offset: 2px; }
+.token-catalog__count { color: #464646; margin: 16px 0; }
+.token-catalog__table-wrap { overflow: auto; }
+.token-catalog table { width: 100%; border-collapse: collapse; text-align: left; table-layout: auto; }
+.token-catalog thead { background: #f4f6f8; }
+.token-catalog th, .token-catalog td { padding: 14px 12px; border-bottom: 1px solid #ddd; vertical-align: top; font-weight: 400; }
+.token-catalog thead th { font-weight: 500; }
+.token-catalog code { font: 12px/1.6 ui-monospace, monospace; overflow-wrap: anywhere; white-space: normal; }
+.token-catalog small { display: block; margin-top: 6px; font-size: 12px; color: #555; max-width: 340px; }
+.token-catalog__preview { width: 80px; min-height: 36px; display: flex; align-items: center; background: repeating-conic-gradient(#eee 0 25%, white 0 50%) 0/12px 12px; border: 1px solid #ddd; border-radius: 4px; overflow: hidden; }
+.token-catalog__swatch { display: block; width: 80px; height: 36px; }
+.token-catalog__radius { display: block; width: 48px; height: 36px; background: #3061af; }
+.token-catalog__measure { display: block; height: 12px; background: #3061af; }
+.token-catalog__chain { display: block; max-width: 400px; font-size: 12px; overflow-wrap: anywhere; }
+.token-catalog__css-name { display: block; color: #666; margin-top: 6px; }
+.token-catalog__samples { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin: 24px 0; }
+.token-catalog__samples:empty { display: none; }
+.token-catalog__samples p { flex-basis: 100%; margin: 0; }
+@media (max-width: 600px) { .token-catalog table { min-width: 680px; } }

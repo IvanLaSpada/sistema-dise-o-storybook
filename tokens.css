@@ -1,3 +1,4 @@
+@import './design-tokens.css';
 :root { 
     --color-azul-500: #0055a5; 
     --color-azul-700: #003366; 

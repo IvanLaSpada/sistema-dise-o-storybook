@@ -73,3 +73,15 @@ También señala la contradicción entre la matriz de cancelación de la página
 las reglas de la página 21. No se modificaron estilos ni comportamientos al añadir
 estas pautas. El PDF original no se distribuye con el catálogo.
 
+
+
+## Tokens de Figma
+
+Se importaron 252 variables (137 Primitivo, 40 Semantico, 75 Componente) desde el panel de variables de Figma el 30/10/2026. Componente tiene modos cliente-rico y erecauda (327 valores en total).
+
+- `design-tokens.json`: nombres, valores, transparencias, alias y modos. Instantánea manual; no se conecta automáticamente con Figma.
+- `npm run build-tokens`: valida nombres CSS, referencias, ciclos y colores observados, y genera `design-tokens.css`. Se ejecuta antes de iniciar o construir Storybook.
+- Catálogos en Tokens: primitivos, semánticos y componentes, con búsqueda y selector de marca.
+- Botones e inputs consumen sus tokens de color aplicables; radios 16 y 4 consumen los primitivos. Otras medidas conservan su implementación previa. Para aplicar la marca a un contenedor: `data-ds-theme="erecauda"`; por defecto se usa cliente-rico.
+- Los números del JSON se preservan sin unidad. La salida web agrega px a medidas y deja sin unidad columnas y pesos. Las descripciones se recuperaron de alias visibles; no hay IDs/scopes de Figma ni garantía de metadatos completos.
+- Los tokens de componentes aún no desarrollados son documentación, no implementaciones nuevas.

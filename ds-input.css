@@ -12,11 +12,11 @@
   --input-label-size: 12px;
   --input-label-height: 16px;
   --input-padding: 16px;
-  --input-border: #6d6d6d;
-  --input-background: #fff;
+  --input-border: var(--ds-token-color-input-border-default);
+  --input-background: var(--ds-token-color-input-background-default);
   width: 240px;
   max-width: 100%;
-  color: #000;
+  color: var(--ds-token-color-input-text-default);
   font-family: var(--font-family-base);
   font-weight: 400;
   padding-top: 8px;
@@ -36,7 +36,7 @@
   position: relative;
   height: var(--input-height);
   border: 1px solid var(--input-border);
-  border-radius: 4px;
+  border-radius: var(--ds-token-border-radius-4);
   background: var(--input-background);
 }
 .ds-input__control {
@@ -47,11 +47,11 @@
   font: inherit; font-size: var(--input-font-size); line-height: var(--input-line-height);
   letter-spacing: .5px;
 }
-.ds-input__control::placeholder { color: #6d6d6d; opacity: 1; }
+.ds-input__control::placeholder { color: var(--ds-token-color-input-text-placeholder); opacity: 1; }
 .ds-input__label {
   position: absolute; top: 0; left: calc(var(--input-padding) - 4px);
   transform: translateY(-50%); padding: 0 4px; max-width: calc(100% - 24px);
-  background: var(--input-background); color: #464646;
+  background: var(--input-background); color: var(--ds-token-color-input-text-label);
   font-size: var(--input-label-size); line-height: var(--input-label-height);
   letter-spacing: .4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   cursor: text;
@@ -62,14 +62,14 @@
 }
 .ds-input[data-state='Enfocado'] .ds-input__field,
 .ds-input:not([data-state='Deshabilitado']) .ds-input__field:focus-within {
-  border-color: #3061af; box-shadow: inset 0 0 0 2px #3061af;
+  border-color: var(--ds-token-color-input-border-focus); box-shadow: inset 0 0 0 2px var(--ds-token-color-input-border-focus);
 }
 .ds-input[data-state='Enfocado'][data-content='Label'] .ds-input__control:placeholder-shown + .ds-input__label {
   top: 0; font-size: var(--input-label-size); line-height: var(--input-label-height);
   background: var(--input-background);
 }
 .ds-input[data-state='Error'] .ds-input__field,
-.ds-input[data-state='Error'] .ds-input__field:focus-within { border-color: #e53935; box-shadow: none; }
+.ds-input[data-state='Error'] .ds-input__field:focus-within { border-color: var(--ds-token-color-input-border-error); box-shadow: none; }
 .ds-input[data-state='Error'] .ds-input__control { padding-right: 36px; }
 .ds-input__error-icon {
   position: absolute; right: 2px; top: 50%; transform: translateY(-50%);
@@ -80,12 +80,12 @@
 .ds-input[data-state='Deshabilitado'] .ds-input__label { color: #6d6d6d; cursor: default; }
 .ds-input__control:disabled { cursor: not-allowed; opacity: 1; -webkit-text-fill-color: #6d6d6d; }
 .ds-input[data-style='Relleno'] .ds-input__field { border-width: 0 0 1px; border-radius: 4px 4px 0 0; }
-.ds-input[data-style='Relleno'][data-state='Deshabilitado'] { --input-background: #e6e6e6; }
+.ds-input[data-style='Relleno'][data-state='Deshabilitado'] { --input-background: var(--ds-token-color-input-background-disabled); }
 .ds-input[data-style='Relleno'] .ds-input__control { padding-top: var(--input-label-height); }
 .ds-input[data-style='Relleno'] .ds-input__label { top: 4px; transform: none; background: transparent; }
 .ds-input[data-style='Relleno'][data-content='Label'] .ds-input__control:placeholder-shown:not(:focus) { padding-top: 0; }
 .ds-input[data-style='Relleno'][data-state='Enfocado'] .ds-input__field,
-.ds-input[data-style='Relleno'] .ds-input__field:focus-within { box-shadow: inset 0 -2px #3061af; }
+.ds-input[data-style='Relleno'] .ds-input__field:focus-within { box-shadow: inset 0 -2px var(--ds-token-color-input-border-focus); }
 .ds-input[data-style='Relleno'][data-state='Error'] .ds-input__field { box-shadow: none; }
 .ds-input[data-style='Relleno'][data-state='Enfocado'][data-content='Label'] .ds-input__control:placeholder-shown + .ds-input__label {
   top: 4px; transform: none; background: transparent;
