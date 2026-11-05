@@ -1,4 +1,4 @@
-image: "node:18" 
+image: "node:22"
 
 stages:
  - deploy 
@@ -8,8 +8,9 @@ build_storybook:
   tags: 
   - okd
   script:
-  - npm install 
-  - npx storybook build -o public
+  - npm ci
+  - npm run build-storybook
+  - mv storybook-static public
   pages: true
   artifacts:
     paths:

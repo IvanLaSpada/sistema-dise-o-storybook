@@ -1,87 +1,52 @@
-# Sistema de Diseño — Storybook
+# Sistema de Diseño SIAF — Storybook Angular
 
-Catálogo inicial de componentes HTML/CSS. Incluye los botones actualizados de Figma y el campo de texto Input.
+Catálogo de botones, campos de texto y tokens con componentes **Angular 20 standalone**. Los componentes pertenecen al sistema de diseño SIAF y tienen estilos propios; no usan Bootstrap ni Angular Material.
 
 ## Desarrollo local
 
 ```sh
-npm install
+npm ci
 npm run storybook
 ```
 
-## Generar el catálogo
+Storybook abre en `http://localhost:6006`. Para generar el sitio estático:
 
 ```sh
 npm run build-storybook
 ```
 
-El resultado se guarda en `storybook-static/`.
+La salida se guarda en `storybook-static/`. `npm run build` también verifica la app mínima de Angular.
 
-## Netlify
+## Componentes Angular
 
-Vincular este repositorio al proyecto existente de Netlify y seleccionar la rama de producción. `netlify.toml` configura el comando de compilación y la carpeta publicada. Cada cambio en la rama de producción iniciará una nueva publicación si los builds están habilitados.
+- `src/app/components/ds-button.component.ts`: componente `<ds-button>` con propiedades `variant`, `size`, `state`, `label`, `showIcon`, `iconOnly` y `disabled`; emite el evento `clicked`.
+- `src/app/components/ds-input.component.ts`: componente `<ds-input>` con variantes, estados, tamaños, textos accesibles, contador y evento `valueChange`.
+- `src/app/components/*stories.ts`: historias Angular y controles de Storybook. La pestaña de código muestra ejemplos de uso Angular.
+- `ds-button.css` y `ds-input.css`: estilos propios basados en Figma; no dependen de Bootstrap.
+- `.storybook/main.ts` y `angular.json`: configuración de Storybook para Angular y builders de Angular CLI.
 
-## Archivos principales
+Los componentes son implementaciones de demostración en Angular y documentan el contrato propuesto para el sistema. Todavía no forman un paquete npm/ng-packagr listo para instalar desde Conta NG; para esa distribución falta acordar el contrato final con desarrollo y empaquetar/publicar la librería.
 
-- `tokens.css`: variables de diseño.
-- `ds-button.css`: estilos del botón.
-- `ds-button.stories.js`: ejemplos, controles y galerías de botones.
-- `.storybook/main.js`: configuración del catálogo.
+## Botones e Input
 
-Las variables están definidas manualmente en CSS. Este proyecto todavía no incluye sincronización con Figma, Style Dictionary ni componentes Angular.
+Los botones ofrecen las variantes Primario, Secundario, Terciario, Link y Peligro; tamaños S/M/L/XL y estados Default, Hover y Disabled. La galería incluye las 60 combinaciones de variante, tamaño y estado.
 
-La configuración original de GitLab se conserva en `.gitlab-ci.yml`.
+Input ofrece estilos delineado/relleno, tamaños S/M/L/XL, estados Default/Enfocado/Error/Deshabilitado, placeholder/etiqueta/contenido, texto de soporte y contador. La galería conserva las 96 combinaciones de estilo, tamaño, estado y contenido. La validación del valor queda a cargo del formulario que lo usa.
 
-## Input / Text Field
-
-En Storybook: **Componentes → Input → Probar componente**. Los controles permiten elegir estilo Delineado/Relleno, tamaño S/M/L/XL, estado, contenido inicial, texto de soporte y contador. **Todas las variantes** muestra las 96 combinaciones principales.
-
-- `ds-input.js`: campo nativo, label asociado, ayuda accesible y contador con límite de caracteres.
-- `ds-input.css`: estilos y tamaños del diseño de Figma.
-- `ds-input.stories.js`: ejemplos interactivos y galería.
-- `assets/`: Roboto y el icono Material de error con sus licencias.
-
-Referencia: [Text Field en Figma](https://www.figma.com/design/QiyZVheWsrCupfVa8woxdI/?node-id=59884-3966).
-El error lo establece el formulario; el componente no decide reglas de validación. El icono opcional de calendario y un selector de fechas quedan fuera de esta entrega del campo de texto. Los cambios de Figma todavía requieren implementación y revisión antes de subirlos a GitHub.
-
-## Botones — 06. Botones
-
-El ejemplo anterior “Botón Primario SIAF” fue reemplazado por **Componentes → Botones**.
-
-- Estilos: Primario, Secundario, Terciario, Link y Peligro.
-- Tamaños: S (32 px), M (40 px), L (48 px), XL (56 px), radio de 16 px.
-- Estados: Default, Hover y Disabled. Hover también responde al mouse y Disabled bloquea la acción nativa.
-- Etiqueta editable, ícono Material stars opcional y versión de solo ícono con nombre accesible.
-- Dos galerías con 60 combinaciones cada una; la versión con texto también permite ocultar el ícono.
-- El ejemplo interactivo registra los clics en Actions y muestra una confirmación. La integración real usa el callback `onClick` de `createButton`.
-
-El estilo Link es una apariencia de botón de acción. La navegación de un producto debe implementarse con enlaces y destinos reales.
-Referencia: [06. Botones en Figma](https://www.figma.com/design/QiyZVheWsrCupfVa8woxdI/?node-id=58673-328).
-# Documentación de uso
-
-Las páginas **Docs** de Botones e Input combinan ejemplos interactivos, controles,
-anatomía, estados, reglas de uso y accesibilidad. **Documentación / Introducción**
-explica cómo navegar el catálogo. Los archivos `Botones.mdx`, `Input.mdx` e
-`Introduccion.mdx` definen estas páginas; `component-guidelines.js` contiene la
-síntesis del PDF **Pautas Diseño Aplicaciones SIAF (4)** aportado por UX el
-28/10/2026 (botones: páginas 16–22; inputs: 24–32).
-
-Se distinguen las pautas del comportamiento implementado. La documentación registra
-las diferencias de radio, tipografía, estados, jerarquías de peligro y posición del
-ícono, los campos especializados pendientes y el anuncio dinámico del contador.
-También señala la contradicción entre la matriz de cancelación de la página 22 y
-las reglas de la página 21. No se modificaron estilos ni comportamientos al añadir
-estas pautas. El PDF original no se distribuye con el catálogo.
-
-
+Las páginas Docs resumen las pautas del PDF **Pautas Diseño Aplicaciones SIAF (4)** y explican la correspondencia entre Figma y el comportamiento implementado. Los cambios de Figma todavía requieren sincronización y revisión; no se actualizan automáticamente.
 
 ## Tokens de Figma
 
-Se importaron 252 variables (137 Primitivo, 40 Semantico, 75 Componente) desde el panel de variables de Figma el 30/10/2026. Componente tiene modos cliente-rico y erecauda (327 valores en total).
+Se importaron 252 variables (137 Primitivo, 40 Semantico, 75 Componente) desde el panel de variables de Figma. Componente tiene modos cliente-rico y erecauda, con 327 valores contando ambos modos.
 
-- `design-tokens.json`: nombres, valores, transparencias, alias y modos. Instantánea manual; no se conecta automáticamente con Figma.
-- `npm run build-tokens`: valida nombres CSS, referencias, ciclos y colores observados, y genera `design-tokens.css`. Se ejecuta antes de iniciar o construir Storybook.
-- Catálogos en Tokens: primitivos, semánticos y componentes, con búsqueda y selector de marca.
-- Botones e inputs consumen sus tokens de color aplicables; radios 16 y 4 consumen los primitivos. Otras medidas conservan su implementación previa. Para aplicar la marca a un contenedor: `data-ds-theme="erecauda"`; por defecto se usa cliente-rico.
-- Los números del JSON se preservan sin unidad. La salida web agrega px a medidas y deja sin unidad columnas y pesos. Las descripciones se recuperaron de alias visibles; no hay IDs/scopes de Figma ni garantía de metadatos completos.
-- Los tokens de componentes aún no desarrollados son documentación, no implementaciones nuevas.
+- `design-tokens.json`: nombres, valores, transparencias, alias y modos. Es una instantánea manual, no una sincronización automática con Figma.
+- `npm run build-tokens`: valida referencias y genera `design-tokens.css` antes de iniciar o construir Storybook.
+- Las páginas Tokens permiten buscar por nombre, referencia o valor y comparar las dos marcas.
+- Botones e inputs consumen los tokens de color aplicables y los radios primitivos 16 y 4. Los demás valores visuales siguen definidos en sus estilos.
+- Los tokens de otros componentes quedan documentados, pero todavía no implican que esos componentes estén implementados.
+
+## Publicación
+
+Netlify publica `storybook-static/` al compilar la rama configurada. GitLab Pages usa `.gitlab-ci.yml` y necesita un runner disponible con la etiqueta `okd`; la imagen de CI es Node 22 para que sea compatible con Angular 20.
+
+La conversión a Angular no publica por sí sola el cambio en GitHub, Netlify ni GitLab: hay que subir estos archivos al repositorio que corresponda.

@@ -1,6 +1,5 @@
-@import './tokens.css';
-@font-face { font-family: 'Roboto'; src: url('./assets/roboto-regular.ttf') format('truetype'); font-style: normal; font-weight: 400; font-display: swap; }
-@font-face { font-family: 'Roboto'; src: url('./assets/roboto-medium.ttf') format('truetype'); font-style: normal; font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Roboto'; src: url('./src/assets/roboto-regular.ttf') format('truetype'); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Roboto'; src: url('./src/assets/roboto-medium.ttf') format('truetype'); font-style: normal; font-weight: 500; font-display: swap; }
 .ds-button {
   --button-height: 40px; --button-width: 104px; --button-padding: 16px;
   --button-font: 14px; --button-line: 20px; --button-icon: 20px; --button-gap: 8px;
@@ -25,7 +24,7 @@
 .ds-button:not(:disabled):hover, .ds-button[data-state='Hover'] { background: var(--button-hover); }
 .ds-button:focus-visible { outline: 2px solid var(--ds-token-color-button-primary-background-default); outline-offset: 3px; }
 .ds-button:disabled { opacity: .3; cursor: not-allowed; }
-.ds-button__icon { display: block; flex: 0 0 var(--button-icon); width: var(--button-icon); height: var(--button-icon); background: currentColor; mask: url('./assets/stars.svg') center / contain no-repeat; }
+.ds-button__icon { display: block; flex: 0 0 var(--button-icon); width: var(--button-icon); height: var(--button-icon); background: currentColor; mask: url('./src/assets/stars.svg') center / contain no-repeat; }
 .ds-button__label { min-width: 0; overflow-wrap: anywhere; padding: 4px 0; }
 .ds-button--icon-only { min-width: var(--button-height); width: var(--button-height); height: var(--button-height); padding: 0; flex-shrink: 0; }
 .ds-button-demo { display: grid; justify-items: start; gap: 24px; }

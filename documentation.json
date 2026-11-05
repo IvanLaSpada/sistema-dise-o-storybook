@@ -1,0 +1,2980 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-ee031e0634a48ea5cf34db836e8d0fa1321714d10a1a966ef561bfd4c0739058cb62758542d83baedcdf8bf0e52e5b400c495f29e08e2cc428a02d175179da8a",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<main><h1>Sistema de diseño SIAF</h1><p>Los componentes se visualizan desde Storybook.</p></main>",
+            "templateUrl": [],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  template: '<main><h1>Sistema de diseño SIAF</h1><p>Los componentes se visualizan desde Storybook.</p></main>',\n})\nexport class AppComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "ButtonGalleryComponent",
+            "id": "component-ButtonGalleryComponent-133dc887d3d4baa083dfc541c13099980a4cfb3ced6d06436339a10557dd2a07ac73bf241a22913e9df206cd6f820530b34d8ee3fa7df5ce1305159cfbf0a9c2",
+            "file": "src/app/components/component-galleries.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "ds-button-gallery",
+            "styleUrls": [
+                "../../../ds-button.css"
+            ],
+            "styles": [],
+            "template": "<div class=\"ds-button-gallery\">\n  <div class=\"ds-button-gallery__item\" *ngFor=\"let item of items\">\n    <p class=\"ds-button-gallery__caption\">{{ variantLabel(item.variant) }} · {{ item.size }} · {{ stateLabel(item.state) }}</p>\n    <ds-button [variant]=\"item.variant\" [size]=\"item.size\" [state]=\"item.state\" [disabled]=\"item.state === 'disabled'\" [iconOnly]=\"iconOnly\" [label]=\"iconOnly ? 'Acción de ejemplo' : 'Label'\"></ds-button>\n  </div>\n</div>\n",
+            "templateUrl": [],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "coverageIgnore": false,
+                    "name": "iconOnly",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "line": 21,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "sizes",
+                    "coverageIgnore": false,
+                    "defaultValue": "['S', 'M', 'L', 'XL']",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ButtonSize[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 23,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ]
+                },
+                {
+                    "name": "states",
+                    "coverageIgnore": false,
+                    "defaultValue": "['default', 'hover', 'disabled']",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ButtonState[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 24,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ]
+                },
+                {
+                    "name": "variants",
+                    "coverageIgnore": false,
+                    "defaultValue": "['primary', 'secondary', 'tertiary', 'link', 'danger']",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ButtonVariant[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 22,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "stateLabel",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "state",
+                            "type": "ButtonState",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 34,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "state",
+                            "type": "ButtonState",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "variantLabel",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "variant",
+                            "type": "ButtonVariant",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "variant",
+                            "type": "ButtonVariant",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "DsButtonComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input } from '@angular/core';\nimport { ButtonSize, ButtonState, ButtonVariant, DsButtonComponent } from './ds-button.component';\nimport { DsInputComponent, InputContent, InputSize, InputState, InputVariant } from './ds-input.component';\n\n@Component({\n  selector: 'ds-button-gallery',\n  standalone: true,\n  imports: [CommonModule, DsButtonComponent],\n  template: `\n    <div class=\"ds-button-gallery\">\n      <div class=\"ds-button-gallery__item\" *ngFor=\"let item of items\">\n        <p class=\"ds-button-gallery__caption\">{{ variantLabel(item.variant) }} · {{ item.size }} · {{ stateLabel(item.state) }}</p>\n        <ds-button [variant]=\"item.variant\" [size]=\"item.size\" [state]=\"item.state\" [disabled]=\"item.state === 'disabled'\" [iconOnly]=\"iconOnly\" [label]=\"iconOnly ? 'Acción de ejemplo' : 'Label'\"></ds-button>\n      </div>\n    </div>\n  `,\n  styleUrls: ['../../../ds-button.css'],\n})\nexport class ButtonGalleryComponent {\n  @Input() iconOnly = false;\n  readonly variants: ButtonVariant[] = ['primary', 'secondary', 'tertiary', 'link', 'danger'];\n  readonly sizes: ButtonSize[] = ['S', 'M', 'L', 'XL'];\n  readonly states: ButtonState[] = ['default', 'hover', 'disabled'];\n\n  get items(): Array<{ variant: ButtonVariant; size: ButtonSize; state: ButtonState }> {\n    return this.variants.flatMap(variant => this.sizes.flatMap(size => this.states.map(state => ({ variant, size, state }))));\n  }\n\n  variantLabel(variant: ButtonVariant): string {\n    return ({ primary: 'Primario', secondary: 'Secundario', tertiary: 'Terciario', link: 'Link', danger: 'Peligro' })[variant];\n  }\n\n  stateLabel(state: ButtonState): string {\n    return ({ default: 'Default', hover: 'Hover', disabled: 'Disabled' })[state];\n  }\n}\n\n@Component({\n  selector: 'ds-input-gallery',\n  standalone: true,\n  imports: [CommonModule, DsInputComponent],\n  template: `\n    <div class=\"ds-input-gallery\">\n      <div class=\"ds-input-gallery__item\" *ngFor=\"let example of examples\">\n        <p class=\"ds-input-gallery__caption\">{{ sizeLabel(example.size) }} · {{ variantLabel(example.variant) }} · {{ stateLabel(example.state) }} · {{ contentLabel(example.content) }}</p>\n        <ds-input\n          [size]=\"example.size\"\n          [variant]=\"example.variant\"\n          [state]=\"example.state\"\n          [content]=\"example.content\"\n          label=\"Label\"\n          placeholder=\"Placeholder\"\n          [value]=\"example.content === 'input' ? 'Input' : ''\"\n          [showSupportingText]=\"false\"\n        ></ds-input>\n      </div>\n    </div>\n  `,\n  styleUrls: ['../../../ds-input.css'],\n})\nexport class InputGalleryComponent {\n  readonly examples: Array<{ size: InputSize; variant: InputVariant; state: InputState; content: InputContent }> = [];\n\n  constructor() {\n    for (const size of ['S', 'M', 'L', 'XL'] as InputSize[]) {\n      for (const variant of ['outlined', 'filled'] as InputVariant[]) {\n        for (const state of ['default', 'focused', 'error', 'disabled'] as InputState[]) {\n          for (const content of ['placeholder', 'label', 'input'] as InputContent[]) {\n            this.examples.push({ size, variant, state, content });\n          }\n        }\n      }\n    }\n  }\n\n  sizeLabel(size: InputSize): string { return size; }\n  variantLabel(variant: InputVariant): string { return variant === 'filled' ? 'Relleno' : 'Delineado'; }\n  stateLabel(state: InputState): string { return ({ default: 'Default', focused: 'Enfocado', error: 'Error', disabled: 'Deshabilitado' })[state]; }\n  contentLabel(content: InputContent): string { return ({ placeholder: 'Placeholder', label: 'Label', input: 'Input' })[content]; }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@font-face { font-family: 'Roboto'; src: url('./src/assets/roboto-regular.ttf') format('truetype'); font-style: normal; font-weight: 400; font-display: swap; }\n@font-face { font-family: 'Roboto'; src: url('./src/assets/roboto-medium.ttf') format('truetype'); font-style: normal; font-weight: 500; font-display: swap; }\n.ds-button {\n  --button-height: 40px; --button-width: 104px; --button-padding: 16px;\n  --button-font: 14px; --button-line: 20px; --button-icon: 20px; --button-gap: 8px;\n  --button-weight: 400; --button-tracking: 0px;\n  --button-bg: var(--ds-token-color-button-primary-background-default); --button-hover: var(--ds-token-color-button-primary-background-hover); --button-text: var(--ds-token-color-button-primary-text-default); --button-border: transparent;\n  box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center;\n  gap: var(--button-gap); min-width: var(--button-width); min-height: var(--button-height);\n  max-width: 100%; padding: 0 var(--button-padding); margin: 0;\n  border: 0; box-shadow: inset 0 0 0 2px var(--button-border); border-radius: var(--ds-token-border-radius-16);\n  background: var(--button-bg); color: var(--button-text);\n  font-family: var(--font-family-base); font-size: var(--button-font); font-weight: var(--button-weight);\n  line-height: var(--button-line); letter-spacing: var(--button-tracking); text-align: center;\n  cursor: pointer; vertical-align: middle; -webkit-tap-highlight-color: transparent;\n}\n.ds-button[data-size='S'] { --button-height: 32px; --button-width: 80px; --button-padding: 12px; --button-font: 12px; --button-line: 16px; --button-icon: 16px; --button-weight: 500; --button-tracking: .1px; }\n.ds-button[data-size='L'] { --button-height: 48px; --button-width: 128px; --button-padding: 20px; --button-font: 16px; --button-line: 24px; --button-icon: 24px; --button-gap: 12px; --button-weight: 400; --button-tracking: 0px; }\n.ds-button[data-size='XL'] { --button-height: 56px; --button-width: 160px; --button-padding: 24px; --button-font: 18px; --button-line: 24px; --button-icon: 28px; --button-gap: 12px; --button-weight: 400; --button-tracking: 0px; }\n.ds-button[data-style='Secundario'] { --button-bg: var(--ds-token-color-button-secondary-background-default); --button-hover: var(--ds-token-color-button-secondary-background-hover); --button-text: var(--ds-token-color-button-secondary-text-default); }\n.ds-button[data-style='Terciario'] { --button-bg: var(--ds-token-color-button-tertiary-background-default); --button-hover: var(--ds-token-color-button-tertiary-background-hover); --button-text: var(--ds-token-color-button-tertiary-text-default); --button-border: var(--ds-token-color-button-tertiary-border-default); }\n.ds-button[data-style='Link'] { --button-bg: var(--ds-token-color-button-link-background-default); --button-hover: var(--ds-token-color-button-link-background-hover); --button-text: var(--ds-token-color-button-link-text-primary-default); }\n.ds-button[data-style='Peligro'] { --button-bg: var(--ds-token-color-button-danger-background-default); --button-hover: var(--ds-token-color-button-danger-background-hover); --button-text: var(--ds-token-color-button-danger-text-default); }\n.ds-button:not(:disabled):hover, .ds-button[data-state='Hover'] { background: var(--button-hover); }\n.ds-button:focus-visible { outline: 2px solid var(--ds-token-color-button-primary-background-default); outline-offset: 3px; }\n.ds-button:disabled { opacity: .3; cursor: not-allowed; }\n.ds-button__icon { display: block; flex: 0 0 var(--button-icon); width: var(--button-icon); height: var(--button-icon); background: currentColor; mask: url('./src/assets/stars.svg') center / contain no-repeat; }\n.ds-button__label { min-width: 0; overflow-wrap: anywhere; padding: 4px 0; }\n.ds-button--icon-only { min-width: var(--button-height); width: var(--button-height); height: var(--button-height); padding: 0; flex-shrink: 0; }\n.ds-button-demo { display: grid; justify-items: start; gap: 24px; }\n.ds-button-demo__status { margin: 0; color: #464646; font: 14px/20px var(--font-family-base); }\n.ds-button-gallery { display: grid; grid-template-columns: repeat(4, minmax(160px, 1fr)); gap: 24px; max-width: 1100px; font-family: var(--font-family-base); }\n.ds-button-gallery__item { min-width: 0; padding: 8px 0; }\n.ds-button-gallery__caption { margin: 0 0 12px; color: #464646; font-size: 12px; line-height: 18px; }\n@media (max-width: 980px) { .ds-button-gallery { grid-template-columns: repeat(2, minmax(160px, 1fr)); } }\n@media (max-width: 420px) { .ds-button-gallery { grid-template-columns: minmax(0, 1fr); } }\n",
+                    "styleUrl": "../../../ds-button.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "accessors": {
+                "items": {
+                    "name": "items",
+                    "getSignature": {
+                        "name": "items",
+                        "type": "unknown",
+                        "returnType": "Array<{ variant: ButtonVariant; size: ButtonSize; state: ButtonState }>",
+                        "line": 26,
+                        "rawdescription": "\n",
+                        "description": ""
+                    }
+                }
+            },
+            "relationships": {
+                "incoming": [],
+                "outgoing": [
+                    {
+                        "name": "CommonModule",
+                        "type": "module"
+                    },
+                    {
+                        "name": "DsButtonComponent",
+                        "type": "component",
+                        "description": "Botón del sistema de diseño SIAF. No requiere Bootstrap. La jerarquía visual se configura con `variant`; `disabled` desactiva el control..."
+                    }
+                ]
+            }
+        },
+        {
+            "name": "DsButtonComponent",
+            "id": "component-DsButtonComponent-e945c83e2f25f973ac09f44ab430aca7bd09ab42d6a6b7860d568864c47951b08a508f20cdfda1563c60709d2e5290d160b18b03b9e544daeb6271b8a1bebd00",
+            "file": "src/app/components/ds-button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "ds-button",
+            "styleUrls": [
+                "../../../ds-button.css"
+            ],
+            "styles": [],
+            "template": "<button\n  class=\"ds-button\"\n  type=\"button\"\n  [attr.data-style]=\"styleName\"\n  [attr.data-size]=\"size\"\n  [attr.data-state]=\"stateName\"\n  [disabled]=\"disabled || state === 'disabled'\"\n  [class.ds-button--icon-only]=\"iconOnly\"\n  [attr.aria-label]=\"iconOnly ? label : null\"\n  [attr.title]=\"iconOnly ? label : null\"\n  (click)=\"clicked.emit($event)\"\n>\n  <span *ngIf=\"showIcon || iconOnly\" class=\"ds-button__icon\" aria-hidden=\"true\"></span>\n  <span *ngIf=\"!iconOnly\" class=\"ds-button__label\"><ng-content>{{ label }}</ng-content></span>\n</button>\n",
+            "templateUrl": [],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "coverageIgnore": false,
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nDeshabilita el botón nativo y evita que emita clics.",
+                    "description": "<p>Deshabilita el botón nativo y evita que emita clics.</p>\n",
+                    "line": 63,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "iconOnly",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nOculta el texto; requiere una etiqueta accesible en `label`.",
+                    "description": "<p>Oculta el texto; requiere una etiqueta accesible en <code>label</code>.</p>\n",
+                    "line": 61,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "label",
+                    "defaultValue": "'Label'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nTexto visible y nombre accesible del botón de solo ícono.",
+                    "description": "<p>Texto visible y nombre accesible del botón de solo ícono.</p>\n",
+                    "line": 57,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "showIcon",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nMuestra el ícono ilustrativo incluido en la demo.",
+                    "description": "<p>Muestra el ícono ilustrativo incluido en la demo.</p>\n",
+                    "line": 59,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "size",
+                    "defaultValue": "'M'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nTamaño visual del botón.",
+                    "description": "<p>Tamaño visual del botón.</p>\n",
+                    "line": 53,
+                    "type": "ButtonSize",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "state",
+                    "defaultValue": "'default'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nEstado visual de inspección. Usá `disabled` para deshabilitar la acción real.",
+                    "description": "<p>Estado visual de inspección. Usá <code>disabled</code> para deshabilitar la acción real.</p>\n",
+                    "line": 55,
+                    "type": "ButtonState",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "variant",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nJerarquía de la acción, según las variantes definidas en Figma.",
+                    "description": "<p>Jerarquía de la acción, según las variantes definidas en Figma.</p>\n",
+                    "line": 51,
+                    "type": "ButtonVariant",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "clicked",
+                    "coverageIgnore": false,
+                    "defaultValue": "new EventEmitter<MouseEvent>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nSe emite cuando la persona activa el botón.",
+                    "description": "<p>Se emite cuando la persona activa el botón.</p>\n",
+                    "line": 66,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "<p>Botón del sistema de diseño SIAF. No requiere Bootstrap.\nLa jerarquía visual se configura con <code>variant</code>; <code>disabled</code> desactiva el control nativo.</p>\n",
+            "rawdescription": "\n\nBotón del sistema de diseño SIAF. No requiere Bootstrap.\nLa jerarquía visual se configura con `variant`; `disabled` desactiva el control nativo.\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nexport type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'link' | 'danger';\nexport type ButtonSize = 'S' | 'M' | 'L' | 'XL';\nexport type ButtonState = 'default' | 'hover' | 'disabled';\n\nconst STYLE_BY_VARIANT: Record<ButtonVariant, string> = {\n  primary: 'Primario',\n  secondary: 'Secundario',\n  tertiary: 'Terciario',\n  link: 'Link',\n  danger: 'Peligro',\n};\n\nconst STATE_BY_NAME: Record<ButtonState, string> = {\n  default: 'Default',\n  hover: 'Hover',\n  disabled: 'Disabled',\n};\n\n/**\n * Botón del sistema de diseño SIAF. No requiere Bootstrap.\n * La jerarquía visual se configura con `variant`; `disabled` desactiva el control nativo.\n */\n@Component({\n  selector: 'ds-button',\n  standalone: true,\n  template: `\n    <button\n      class=\"ds-button\"\n      type=\"button\"\n      [attr.data-style]=\"styleName\"\n      [attr.data-size]=\"size\"\n      [attr.data-state]=\"stateName\"\n      [disabled]=\"disabled || state === 'disabled'\"\n      [class.ds-button--icon-only]=\"iconOnly\"\n      [attr.aria-label]=\"iconOnly ? label : null\"\n      [attr.title]=\"iconOnly ? label : null\"\n      (click)=\"clicked.emit($event)\"\n    >\n      <span *ngIf=\"showIcon || iconOnly\" class=\"ds-button__icon\" aria-hidden=\"true\"></span>\n      <span *ngIf=\"!iconOnly\" class=\"ds-button__label\"><ng-content>{{ label }}</ng-content></span>\n    </button>\n  `,\n  imports: [CommonModule],\n  styleUrls: ['../../../ds-button.css'],\n})\nexport class DsButtonComponent {\n  /** Jerarquía de la acción, según las variantes definidas en Figma. */\n  @Input() variant: ButtonVariant = 'primary';\n  /** Tamaño visual del botón. */\n  @Input() size: ButtonSize = 'M';\n  /** Estado visual de inspección. Usá `disabled` para deshabilitar la acción real. */\n  @Input() state: ButtonState = 'default';\n  /** Texto visible y nombre accesible del botón de solo ícono. */\n  @Input() label = 'Label';\n  /** Muestra el ícono ilustrativo incluido en la demo. */\n  @Input() showIcon = true;\n  /** Oculta el texto; requiere una etiqueta accesible en `label`. */\n  @Input() iconOnly = false;\n  /** Deshabilita el botón nativo y evita que emita clics. */\n  @Input() disabled = false;\n\n  /** Se emite cuando la persona activa el botón. */\n  @Output() readonly clicked = new EventEmitter<MouseEvent>();\n\n  get styleName(): string {\n    return STYLE_BY_VARIANT[this.variant] ?? STYLE_BY_VARIANT.primary;\n  }\n\n  get stateName(): string {\n    return STATE_BY_NAME[this.state] ?? STATE_BY_NAME.default;\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@font-face { font-family: 'Roboto'; src: url('./src/assets/roboto-regular.ttf') format('truetype'); font-style: normal; font-weight: 400; font-display: swap; }\n@font-face { font-family: 'Roboto'; src: url('./src/assets/roboto-medium.ttf') format('truetype'); font-style: normal; font-weight: 500; font-display: swap; }\n.ds-button {\n  --button-height: 40px; --button-width: 104px; --button-padding: 16px;\n  --button-font: 14px; --button-line: 20px; --button-icon: 20px; --button-gap: 8px;\n  --button-weight: 400; --button-tracking: 0px;\n  --button-bg: var(--ds-token-color-button-primary-background-default); --button-hover: var(--ds-token-color-button-primary-background-hover); --button-text: var(--ds-token-color-button-primary-text-default); --button-border: transparent;\n  box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center;\n  gap: var(--button-gap); min-width: var(--button-width); min-height: var(--button-height);\n  max-width: 100%; padding: 0 var(--button-padding); margin: 0;\n  border: 0; box-shadow: inset 0 0 0 2px var(--button-border); border-radius: var(--ds-token-border-radius-16);\n  background: var(--button-bg); color: var(--button-text);\n  font-family: var(--font-family-base); font-size: var(--button-font); font-weight: var(--button-weight);\n  line-height: var(--button-line); letter-spacing: var(--button-tracking); text-align: center;\n  cursor: pointer; vertical-align: middle; -webkit-tap-highlight-color: transparent;\n}\n.ds-button[data-size='S'] { --button-height: 32px; --button-width: 80px; --button-padding: 12px; --button-font: 12px; --button-line: 16px; --button-icon: 16px; --button-weight: 500; --button-tracking: .1px; }\n.ds-button[data-size='L'] { --button-height: 48px; --button-width: 128px; --button-padding: 20px; --button-font: 16px; --button-line: 24px; --button-icon: 24px; --button-gap: 12px; --button-weight: 400; --button-tracking: 0px; }\n.ds-button[data-size='XL'] { --button-height: 56px; --button-width: 160px; --button-padding: 24px; --button-font: 18px; --button-line: 24px; --button-icon: 28px; --button-gap: 12px; --button-weight: 400; --button-tracking: 0px; }\n.ds-button[data-style='Secundario'] { --button-bg: var(--ds-token-color-button-secondary-background-default); --button-hover: var(--ds-token-color-button-secondary-background-hover); --button-text: var(--ds-token-color-button-secondary-text-default); }\n.ds-button[data-style='Terciario'] { --button-bg: var(--ds-token-color-button-tertiary-background-default); --button-hover: var(--ds-token-color-button-tertiary-background-hover); --button-text: var(--ds-token-color-button-tertiary-text-default); --button-border: var(--ds-token-color-button-tertiary-border-default); }\n.ds-button[data-style='Link'] { --button-bg: var(--ds-token-color-button-link-background-default); --button-hover: var(--ds-token-color-button-link-background-hover); --button-text: var(--ds-token-color-button-link-text-primary-default); }\n.ds-button[data-style='Peligro'] { --button-bg: var(--ds-token-color-button-danger-background-default); --button-hover: var(--ds-token-color-button-danger-background-hover); --button-text: var(--ds-token-color-button-danger-text-default); }\n.ds-button:not(:disabled):hover, .ds-button[data-state='Hover'] { background: var(--button-hover); }\n.ds-button:focus-visible { outline: 2px solid var(--ds-token-color-button-primary-background-default); outline-offset: 3px; }\n.ds-button:disabled { opacity: .3; cursor: not-allowed; }\n.ds-button__icon { display: block; flex: 0 0 var(--button-icon); width: var(--button-icon); height: var(--button-icon); background: currentColor; mask: url('./src/assets/stars.svg') center / contain no-repeat; }\n.ds-button__label { min-width: 0; overflow-wrap: anywhere; padding: 4px 0; }\n.ds-button--icon-only { min-width: var(--button-height); width: var(--button-height); height: var(--button-height); padding: 0; flex-shrink: 0; }\n.ds-button-demo { display: grid; justify-items: start; gap: 24px; }\n.ds-button-demo__status { margin: 0; color: #464646; font: 14px/20px var(--font-family-base); }\n.ds-button-gallery { display: grid; grid-template-columns: repeat(4, minmax(160px, 1fr)); gap: 24px; max-width: 1100px; font-family: var(--font-family-base); }\n.ds-button-gallery__item { min-width: 0; padding: 8px 0; }\n.ds-button-gallery__caption { margin: 0 0 12px; color: #464646; font-size: 12px; line-height: 18px; }\n@media (max-width: 980px) { .ds-button-gallery { grid-template-columns: repeat(2, minmax(160px, 1fr)); } }\n@media (max-width: 420px) { .ds-button-gallery { grid-template-columns: minmax(0, 1fr); } }\n",
+                    "styleUrl": "../../../ds-button.css"
+                }
+            ],
+            "stylesData": "",
+            "jsdoctags": [
+                {
+                    "pos": 612,
+                    "end": 770,
+                    "kind": 321,
+                    "id": 0,
+                    "flags": 16777216,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "comment": "Botón del sistema de diseño SIAF. No requiere Bootstrap.\nLa jerarquía visual se configura con `variant`; `disabled` desactiva el control nativo."
+                }
+            ],
+            "extends": [],
+            "accessors": {
+                "styleName": {
+                    "name": "styleName",
+                    "getSignature": {
+                        "name": "styleName",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 68,
+                        "rawdescription": "\n",
+                        "description": ""
+                    }
+                },
+                "stateName": {
+                    "name": "stateName",
+                    "getSignature": {
+                        "name": "stateName",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 72,
+                        "rawdescription": "\n",
+                        "description": ""
+                    }
+                }
+            },
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "ButtonGalleryComponent",
+                        "type": "component"
+                    },
+                    {
+                        "name": "TokenCatalogComponent",
+                        "type": "component",
+                        "description": "Catálogo navegable de los tokens que se importaron desde las variables de Figma."
+                    }
+                ],
+                "outgoing": [
+                    {
+                        "name": "CommonModule",
+                        "type": "module"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "DsInputComponent",
+            "id": "component-DsInputComponent-3f6647641171129539099b870a9d5827c77cb7378a0d8209a2093b0ffcd00217d7c5e974e6be5c6d87d3580de9dea4041dba9c5c62d44aabc5143e3963272d5d",
+            "file": "src/app/components/ds-input.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "ds-input",
+            "styleUrls": [
+                "../../../ds-input.css"
+            ],
+            "styles": [],
+            "template": "<div\n  class=\"ds-input\"\n  [attr.data-style]=\"styleName\"\n  [attr.data-state]=\"stateName\"\n  [attr.data-size]=\"size\"\n  [attr.data-content]=\"contentName\"\n  [class.ds-input--full]=\"fullWidth\"\n>\n  <div class=\"ds-input__field\">\n    <input\n      class=\"ds-input__control\"\n      [id]=\"inputId\"\n      [name]=\"inputId\"\n      type=\"text\"\n      [placeholder]=\"content === 'label' ? ' ' : placeholder\"\n      [value]=\"value\"\n      [disabled]=\"disabled || state === 'disabled'\"\n      [attr.maxlength]=\"showCounter ? maxLength : null\"\n      [attr.aria-invalid]=\"state === 'error' ? 'true' : null\"\n      [attr.aria-describedby]=\"describedBy\"\n      (input)=\"handleInput($event)\"\n    />\n    <label class=\"ds-input__label\" [for]=\"inputId\">{{ label }}</label>\n    <span *ngIf=\"state === 'error'\" class=\"ds-input__error-icon\" aria-hidden=\"true\"></span>\n  </div>\n  <div *ngIf=\"showSupportingText || showCounter\" class=\"ds-input__footer\">\n    <span *ngIf=\"showSupportingText && supportingText\" class=\"ds-input__support\" [id]=\"supportId\">\n      {{ supportingText }}\n    </span>\n    <span *ngIf=\"showCounter\" class=\"ds-input__counter\" [id]=\"counterId\">\n      {{ currentLength }}/{{ maxLength }}\n    </span>\n  </div>\n</div>\n",
+            "templateUrl": [],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "coverageIgnore": false,
+                    "name": "content",
+                    "defaultValue": "'placeholder'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nDecide si se muestra una pista, una etiqueta flotante o un valor inicial.",
+                    "description": "<p>Decide si se muestra una pista, una etiqueta flotante o un valor inicial.</p>\n",
+                    "line": 64,
+                    "type": "InputContent",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nDeshabilita el control aunque el estado visual sea otro.",
+                    "description": "<p>Deshabilita el control aunque el estado visual sea otro.</p>\n",
+                    "line": 62,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "fullWidth",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nHace que el campo ocupe el ancho disponible.",
+                    "description": "<p>Hace que el campo ocupe el ancho disponible.</p>\n",
+                    "line": 78,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "label",
+                    "defaultValue": "'Label'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nIdentificador asociado a la etiqueta visible.",
+                    "description": "<p>Identificador asociado a la etiqueta visible.</p>\n",
+                    "line": 54,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "maxLength",
+                    "defaultValue": "10",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nLímite aplicado al campo y reflejado en el contador.",
+                    "description": "<p>Límite aplicado al campo y reflejado en el contador.</p>\n",
+                    "line": 76,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "placeholder",
+                    "defaultValue": "'Placeholder'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nPista breve para el formato esperado.",
+                    "description": "<p>Pista breve para el formato esperado.</p>\n",
+                    "line": 66,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "showCounter",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nMuestra el contador accesible de caracteres.",
+                    "description": "<p>Muestra el contador accesible de caracteres.</p>\n",
+                    "line": 74,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "showSupportingText",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nMuestra u oculta el texto de soporte.",
+                    "description": "<p>Muestra u oculta el texto de soporte.</p>\n",
+                    "line": 72,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "size",
+                    "defaultValue": "'M'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nTamaño visual del campo.",
+                    "description": "<p>Tamaño visual del campo.</p>\n",
+                    "line": 58,
+                    "type": "InputSize",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "state",
+                    "defaultValue": "'default'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nEstado visual; el formulario conserva la responsabilidad de validar el dato.",
+                    "description": "<p>Estado visual; el formulario conserva la responsabilidad de validar el dato.</p>\n",
+                    "line": 60,
+                    "type": "InputState",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "supportingText",
+                    "defaultValue": "'Supporting text'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nAyuda asociada al campo mediante `aria-describedby`.",
+                    "description": "<p>Ayuda asociada al campo mediante <code>aria-describedby</code>.</p>\n",
+                    "line": 70,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "value",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nValor editable del campo.",
+                    "description": "<p>Valor editable del campo.</p>\n",
+                    "line": 68,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "coverageIgnore": false,
+                    "name": "variant",
+                    "defaultValue": "'outlined'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nApariencia delineada o rellena.",
+                    "description": "<p>Apariencia delineada o rellena.</p>\n",
+                    "line": 56,
+                    "type": "InputVariant",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "valueChange",
+                    "coverageIgnore": false,
+                    "defaultValue": "new EventEmitter<string>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nEmite el nuevo valor para que el formulario contenedor lo guarde.",
+                    "description": "<p>Emite el nuevo valor para que el formulario contenedor lo guarde.</p>\n",
+                    "line": 80,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "counterId",
+                    "coverageIgnore": false,
+                    "defaultValue": "`${this.inputId}-count`",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 84,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ]
+                },
+                {
+                    "name": "inputId",
+                    "coverageIgnore": false,
+                    "defaultValue": "`ds-input-${++nextInputId}`",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 82,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ]
+                },
+                {
+                    "name": "supportId",
+                    "coverageIgnore": false,
+                    "defaultValue": "`${this.inputId}-help`",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 83,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "handleInput",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 109,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "<p>Campo de texto del sistema de diseño. El formulario que lo contiene controla la validación.</p>\n",
+            "rawdescription": "\nCampo de texto del sistema de diseño. El formulario que lo contiene controla la validación.",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\n\nexport type InputVariant = 'outlined' | 'filled';\nexport type InputSize = 'S' | 'M' | 'L' | 'XL';\nexport type InputState = 'default' | 'focused' | 'error' | 'disabled';\nexport type InputContent = 'placeholder' | 'label' | 'input';\n\nlet nextInputId = 0;\n\n/** Campo de texto del sistema de diseño. El formulario que lo contiene controla la validación. */\n@Component({\n  selector: 'ds-input',\n  standalone: true,\n  template: `\n    <div\n      class=\"ds-input\"\n      [attr.data-style]=\"styleName\"\n      [attr.data-state]=\"stateName\"\n      [attr.data-size]=\"size\"\n      [attr.data-content]=\"contentName\"\n      [class.ds-input--full]=\"fullWidth\"\n    >\n      <div class=\"ds-input__field\">\n        <input\n          class=\"ds-input__control\"\n          [id]=\"inputId\"\n          [name]=\"inputId\"\n          type=\"text\"\n          [placeholder]=\"content === 'label' ? ' ' : placeholder\"\n          [value]=\"value\"\n          [disabled]=\"disabled || state === 'disabled'\"\n          [attr.maxlength]=\"showCounter ? maxLength : null\"\n          [attr.aria-invalid]=\"state === 'error' ? 'true' : null\"\n          [attr.aria-describedby]=\"describedBy\"\n          (input)=\"handleInput($event)\"\n        />\n        <label class=\"ds-input__label\" [for]=\"inputId\">{{ label }}</label>\n        <span *ngIf=\"state === 'error'\" class=\"ds-input__error-icon\" aria-hidden=\"true\"></span>\n      </div>\n      <div *ngIf=\"showSupportingText || showCounter\" class=\"ds-input__footer\">\n        <span *ngIf=\"showSupportingText && supportingText\" class=\"ds-input__support\" [id]=\"supportId\">\n          {{ supportingText }}\n        </span>\n        <span *ngIf=\"showCounter\" class=\"ds-input__counter\" [id]=\"counterId\">\n          {{ currentLength }}/{{ maxLength }}\n        </span>\n      </div>\n    </div>\n  `,\n  styleUrls: ['../../../ds-input.css'],\n})\nexport class DsInputComponent {\n  /** Identificador asociado a la etiqueta visible. */\n  @Input() label = 'Label';\n  /** Apariencia delineada o rellena. */\n  @Input() variant: InputVariant = 'outlined';\n  /** Tamaño visual del campo. */\n  @Input() size: InputSize = 'M';\n  /** Estado visual; el formulario conserva la responsabilidad de validar el dato. */\n  @Input() state: InputState = 'default';\n  /** Deshabilita el control aunque el estado visual sea otro. */\n  @Input() disabled = false;\n  /** Decide si se muestra una pista, una etiqueta flotante o un valor inicial. */\n  @Input() content: InputContent = 'placeholder';\n  /** Pista breve para el formato esperado. */\n  @Input() placeholder = 'Placeholder';\n  /** Valor editable del campo. */\n  @Input() value = '';\n  /** Ayuda asociada al campo mediante `aria-describedby`. */\n  @Input() supportingText = 'Supporting text';\n  /** Muestra u oculta el texto de soporte. */\n  @Input() showSupportingText = true;\n  /** Muestra el contador accesible de caracteres. */\n  @Input() showCounter = false;\n  /** Límite aplicado al campo y reflejado en el contador. */\n  @Input() maxLength = 10;\n  /** Hace que el campo ocupe el ancho disponible. */\n  @Input() fullWidth = false;\n  /** Emite el nuevo valor para que el formulario contenedor lo guarde. */\n  @Output() readonly valueChange = new EventEmitter<string>();\n\n  readonly inputId = `ds-input-${++nextInputId}`;\n  readonly supportId = `${this.inputId}-help`;\n  readonly counterId = `${this.inputId}-count`;\n\n  get styleName(): string {\n    return this.variant === 'filled' ? 'Relleno' : 'Delineado';\n  }\n\n  get stateName(): string {\n    if (this.disabled) return 'Deshabilitado';\n    return ({ default: 'Default', focused: 'Enfocado', error: 'Error', disabled: 'Deshabilitado' } as const)[this.state];\n  }\n\n  get contentName(): string {\n    return ({ placeholder: 'Placeholder', label: 'Label', input: 'Input' } as const)[this.content];\n  }\n\n  get describedBy(): string | null {\n    const ids = [this.showSupportingText && this.supportingText ? this.supportId : null, this.showCounter ? this.counterId : null]\n      .filter((id): id is string => Boolean(id));\n    return ids.length ? ids.join(' ') : null;\n  }\n\n  get currentLength(): number {\n    return this.value.length;\n  }\n\n  handleInput(event: Event): void {\n    this.value = (event.target as HTMLInputElement).value;\n    this.valueChange.emit(this.value);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@font-face {\n  font-family: 'Roboto'; font-style: normal; font-weight: 400;\n  font-display: swap; src: url('./src/assets/roboto-regular.ttf') format('truetype');\n}\n\n/* Valores del set Text Field, página 07. Inputs, en Figma DGSIAF. */\n.ds-input {\n  --input-height: 40px;\n  --input-font-size: 14px;\n  --input-line-height: 20px;\n  --input-label-size: 12px;\n  --input-label-height: 16px;\n  --input-padding: 16px;\n  --input-border: var(--ds-token-color-input-border-default);\n  --input-background: var(--ds-token-color-input-background-default);\n  width: 240px;\n  max-width: 100%;\n  color: var(--ds-token-color-input-text-default);\n  font-family: var(--font-family-base);\n  font-weight: 400;\n  padding-top: 8px;\n}\n.ds-input, .ds-input * { box-sizing: border-box; }\n.ds-input--full { width: 100%; }\n.ds-input[data-size='S'] {\n  --input-height: 32px; --input-font-size: 12px; --input-line-height: 16px;\n  --input-label-size: 10px; --input-label-height: 12px; --input-padding: 12px;\n}\n.ds-input[data-size='L'] { --input-height: 48px; --input-font-size: 16px; --input-line-height: 24px; }\n.ds-input[data-size='XL'] {\n  --input-height: 56px; --input-font-size: 18px; --input-line-height: 24px;\n  --input-label-size: 14px; --input-label-height: 20px; --input-padding: 24px;\n}\n.ds-input__field {\n  position: relative;\n  height: var(--input-height);\n  border: 1px solid var(--input-border);\n  border-radius: var(--ds-token-border-radius-4);\n  background: var(--input-background);\n}\n.ds-input__control {\n  display: block; width: 100%; height: 100%; min-width: 0;\n  border: 0; outline: 0; border-radius: inherit;\n  margin: 0; padding: 0 var(--input-padding);\n  background: transparent; color: inherit;\n  font: inherit; font-size: var(--input-font-size); line-height: var(--input-line-height);\n  letter-spacing: .5px;\n}\n.ds-input__control::placeholder { color: var(--ds-token-color-input-text-placeholder); opacity: 1; }\n.ds-input__label {\n  position: absolute; top: 0; left: calc(var(--input-padding) - 4px);\n  transform: translateY(-50%); padding: 0 4px; max-width: calc(100% - 24px);\n  background: var(--input-background); color: var(--ds-token-color-input-text-label);\n  font-size: var(--input-label-size); line-height: var(--input-label-height);\n  letter-spacing: .4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;\n  cursor: text;\n}\n.ds-input[data-content='Label'] .ds-input__control:placeholder-shown:not(:focus) + .ds-input__label {\n  top: 50%; transform: translateY(-50%); background: transparent;\n  font-size: var(--input-font-size); line-height: var(--input-line-height); letter-spacing: .5px;\n}\n.ds-input[data-state='Enfocado'] .ds-input__field,\n.ds-input:not([data-state='Deshabilitado']) .ds-input__field:focus-within {\n  border-color: var(--ds-token-color-input-border-focus); box-shadow: inset 0 0 0 2px var(--ds-token-color-input-border-focus);\n}\n.ds-input[data-state='Enfocado'][data-content='Label'] .ds-input__control:placeholder-shown + .ds-input__label {\n  top: 0; font-size: var(--input-label-size); line-height: var(--input-label-height);\n  background: var(--input-background);\n}\n.ds-input[data-state='Error'] .ds-input__field,\n.ds-input[data-state='Error'] .ds-input__field:focus-within { border-color: var(--ds-token-color-input-border-error); box-shadow: none; }\n.ds-input[data-state='Error'] .ds-input__control { padding-right: 36px; }\n.ds-input__error-icon {\n  position: absolute; right: 2px; top: 50%; transform: translateY(-50%);\n  width: 24px; height: 24px; background: #e53935;\n  mask: url('./src/assets/error.svg') center / contain no-repeat;\n}\n.ds-input[data-state='Deshabilitado'] { --input-border: #b1b1b1; color: #6d6d6d; }\n.ds-input[data-state='Deshabilitado'] .ds-input__label { color: #6d6d6d; cursor: default; }\n.ds-input__control:disabled { cursor: not-allowed; opacity: 1; -webkit-text-fill-color: #6d6d6d; }\n.ds-input[data-style='Relleno'] .ds-input__field { border-width: 0 0 1px; border-radius: 4px 4px 0 0; }\n.ds-input[data-style='Relleno'][data-state='Deshabilitado'] { --input-background: var(--ds-token-color-input-background-disabled); }\n.ds-input[data-style='Relleno'] .ds-input__control { padding-top: var(--input-label-height); }\n.ds-input[data-style='Relleno'] .ds-input__label { top: 4px; transform: none; background: transparent; }\n.ds-input[data-style='Relleno'][data-content='Label'] .ds-input__control:placeholder-shown:not(:focus) { padding-top: 0; }\n.ds-input[data-style='Relleno'][data-state='Enfocado'] .ds-input__field,\n.ds-input[data-style='Relleno'] .ds-input__field:focus-within { box-shadow: inset 0 -2px var(--ds-token-color-input-border-focus); }\n.ds-input[data-style='Relleno'][data-state='Error'] .ds-input__field { box-shadow: none; }\n.ds-input[data-style='Relleno'][data-state='Enfocado'][data-content='Label'] .ds-input__control:placeholder-shown + .ds-input__label {\n  top: 4px; transform: none; background: transparent;\n}\n.ds-input__footer {\n  display: flex; align-items: start; gap: 8px; padding: 4px 16px 0;\n  margin-top: calc(56px - var(--input-height));\n  font-size: var(--input-label-size); line-height: var(--input-label-height); letter-spacing: .4px;\n  overflow-wrap: anywhere;\n}\n.ds-input__support { flex: 1; min-width: 0; }\n.ds-input__counter { margin-left: auto; flex-shrink: 0; white-space: nowrap; color: #6d6d6d; }\n.ds-input-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 40px 32px; max-width: 1100px; padding: 16px 0; font-family: var(--font-family-base); }\n.ds-input-gallery__item { min-width: 0; }\n.ds-input-gallery__caption { margin: 0 0 16px; font-size: 12px; line-height: 18px; color: #464646; }\n",
+                    "styleUrl": "../../../ds-input.css"
+                }
+            ],
+            "stylesData": "",
+            "jsdoctags": [
+                {
+                    "pos": 327,
+                    "end": 425,
+                    "kind": 321,
+                    "id": 0,
+                    "flags": 16777216,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "comment": "Campo de texto del sistema de diseño. El formulario que lo contiene controla la validación."
+                }
+            ],
+            "extends": [],
+            "accessors": {
+                "styleName": {
+                    "name": "styleName",
+                    "getSignature": {
+                        "name": "styleName",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 86,
+                        "rawdescription": "\n",
+                        "description": ""
+                    }
+                },
+                "stateName": {
+                    "name": "stateName",
+                    "getSignature": {
+                        "name": "stateName",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 90,
+                        "rawdescription": "\n",
+                        "description": ""
+                    }
+                },
+                "contentName": {
+                    "name": "contentName",
+                    "getSignature": {
+                        "name": "contentName",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 95,
+                        "rawdescription": "\n",
+                        "description": ""
+                    }
+                },
+                "describedBy": {
+                    "name": "describedBy",
+                    "getSignature": {
+                        "name": "describedBy",
+                        "type": "unknown",
+                        "returnType": "string | null",
+                        "line": 99,
+                        "rawdescription": "\n",
+                        "description": ""
+                    }
+                },
+                "currentLength": {
+                    "name": "currentLength",
+                    "getSignature": {
+                        "name": "currentLength",
+                        "type": "number",
+                        "returnType": "number",
+                        "line": 105,
+                        "rawdescription": "\n",
+                        "description": ""
+                    }
+                }
+            },
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "InputGalleryComponent",
+                        "type": "component"
+                    },
+                    {
+                        "name": "TokenCatalogComponent",
+                        "type": "component",
+                        "description": "Catálogo navegable de los tokens que se importaron desde las variables de Figma."
+                    }
+                ],
+                "outgoing": []
+            }
+        },
+        {
+            "name": "InputGalleryComponent",
+            "id": "component-InputGalleryComponent-133dc887d3d4baa083dfc541c13099980a4cfb3ced6d06436339a10557dd2a07ac73bf241a22913e9df206cd6f820530b34d8ee3fa7df5ce1305159cfbf0a9c2",
+            "file": "src/app/components/component-galleries.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "ds-input-gallery",
+            "styleUrls": [
+                "../../../ds-input.css"
+            ],
+            "styles": [],
+            "template": "<div class=\"ds-input-gallery\">\n  <div class=\"ds-input-gallery__item\" *ngFor=\"let example of examples\">\n    <p class=\"ds-input-gallery__caption\">{{ sizeLabel(example.size) }} · {{ variantLabel(example.variant) }} · {{ stateLabel(example.state) }} · {{ contentLabel(example.content) }}</p>\n    <ds-input\n      [size]=\"example.size\"\n      [variant]=\"example.variant\"\n      [state]=\"example.state\"\n      [content]=\"example.content\"\n      label=\"Label\"\n      placeholder=\"Placeholder\"\n      [value]=\"example.content === 'input' ? 'Input' : ''\"\n      [showSupportingText]=\"false\"\n    ></ds-input>\n  </div>\n</div>\n",
+            "templateUrl": [],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "examples",
+                    "coverageIgnore": false,
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<{ size: InputSize; variant: InputVariant; state: InputState; content: InputContent }>",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 63,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "contentLabel",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "content",
+                            "type": "InputContent",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 80,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "content",
+                            "type": "InputContent",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "sizeLabel",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "size",
+                            "type": "InputSize",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 77,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "size",
+                            "type": "InputSize",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "stateLabel",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "state",
+                            "type": "InputState",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 79,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "state",
+                            "type": "InputState",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "variantLabel",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "variant",
+                            "type": "InputVariant",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 78,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "variant",
+                            "type": "InputVariant",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "DsInputComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input } from '@angular/core';\nimport { ButtonSize, ButtonState, ButtonVariant, DsButtonComponent } from './ds-button.component';\nimport { DsInputComponent, InputContent, InputSize, InputState, InputVariant } from './ds-input.component';\n\n@Component({\n  selector: 'ds-button-gallery',\n  standalone: true,\n  imports: [CommonModule, DsButtonComponent],\n  template: `\n    <div class=\"ds-button-gallery\">\n      <div class=\"ds-button-gallery__item\" *ngFor=\"let item of items\">\n        <p class=\"ds-button-gallery__caption\">{{ variantLabel(item.variant) }} · {{ item.size }} · {{ stateLabel(item.state) }}</p>\n        <ds-button [variant]=\"item.variant\" [size]=\"item.size\" [state]=\"item.state\" [disabled]=\"item.state === 'disabled'\" [iconOnly]=\"iconOnly\" [label]=\"iconOnly ? 'Acción de ejemplo' : 'Label'\"></ds-button>\n      </div>\n    </div>\n  `,\n  styleUrls: ['../../../ds-button.css'],\n})\nexport class ButtonGalleryComponent {\n  @Input() iconOnly = false;\n  readonly variants: ButtonVariant[] = ['primary', 'secondary', 'tertiary', 'link', 'danger'];\n  readonly sizes: ButtonSize[] = ['S', 'M', 'L', 'XL'];\n  readonly states: ButtonState[] = ['default', 'hover', 'disabled'];\n\n  get items(): Array<{ variant: ButtonVariant; size: ButtonSize; state: ButtonState }> {\n    return this.variants.flatMap(variant => this.sizes.flatMap(size => this.states.map(state => ({ variant, size, state }))));\n  }\n\n  variantLabel(variant: ButtonVariant): string {\n    return ({ primary: 'Primario', secondary: 'Secundario', tertiary: 'Terciario', link: 'Link', danger: 'Peligro' })[variant];\n  }\n\n  stateLabel(state: ButtonState): string {\n    return ({ default: 'Default', hover: 'Hover', disabled: 'Disabled' })[state];\n  }\n}\n\n@Component({\n  selector: 'ds-input-gallery',\n  standalone: true,\n  imports: [CommonModule, DsInputComponent],\n  template: `\n    <div class=\"ds-input-gallery\">\n      <div class=\"ds-input-gallery__item\" *ngFor=\"let example of examples\">\n        <p class=\"ds-input-gallery__caption\">{{ sizeLabel(example.size) }} · {{ variantLabel(example.variant) }} · {{ stateLabel(example.state) }} · {{ contentLabel(example.content) }}</p>\n        <ds-input\n          [size]=\"example.size\"\n          [variant]=\"example.variant\"\n          [state]=\"example.state\"\n          [content]=\"example.content\"\n          label=\"Label\"\n          placeholder=\"Placeholder\"\n          [value]=\"example.content === 'input' ? 'Input' : ''\"\n          [showSupportingText]=\"false\"\n        ></ds-input>\n      </div>\n    </div>\n  `,\n  styleUrls: ['../../../ds-input.css'],\n})\nexport class InputGalleryComponent {\n  readonly examples: Array<{ size: InputSize; variant: InputVariant; state: InputState; content: InputContent }> = [];\n\n  constructor() {\n    for (const size of ['S', 'M', 'L', 'XL'] as InputSize[]) {\n      for (const variant of ['outlined', 'filled'] as InputVariant[]) {\n        for (const state of ['default', 'focused', 'error', 'disabled'] as InputState[]) {\n          for (const content of ['placeholder', 'label', 'input'] as InputContent[]) {\n            this.examples.push({ size, variant, state, content });\n          }\n        }\n      }\n    }\n  }\n\n  sizeLabel(size: InputSize): string { return size; }\n  variantLabel(variant: InputVariant): string { return variant === 'filled' ? 'Relleno' : 'Delineado'; }\n  stateLabel(state: InputState): string { return ({ default: 'Default', focused: 'Enfocado', error: 'Error', disabled: 'Deshabilitado' })[state]; }\n  contentLabel(content: InputContent): string { return ({ placeholder: 'Placeholder', label: 'Label', input: 'Input' })[content]; }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@font-face {\n  font-family: 'Roboto'; font-style: normal; font-weight: 400;\n  font-display: swap; src: url('./src/assets/roboto-regular.ttf') format('truetype');\n}\n\n/* Valores del set Text Field, página 07. Inputs, en Figma DGSIAF. */\n.ds-input {\n  --input-height: 40px;\n  --input-font-size: 14px;\n  --input-line-height: 20px;\n  --input-label-size: 12px;\n  --input-label-height: 16px;\n  --input-padding: 16px;\n  --input-border: var(--ds-token-color-input-border-default);\n  --input-background: var(--ds-token-color-input-background-default);\n  width: 240px;\n  max-width: 100%;\n  color: var(--ds-token-color-input-text-default);\n  font-family: var(--font-family-base);\n  font-weight: 400;\n  padding-top: 8px;\n}\n.ds-input, .ds-input * { box-sizing: border-box; }\n.ds-input--full { width: 100%; }\n.ds-input[data-size='S'] {\n  --input-height: 32px; --input-font-size: 12px; --input-line-height: 16px;\n  --input-label-size: 10px; --input-label-height: 12px; --input-padding: 12px;\n}\n.ds-input[data-size='L'] { --input-height: 48px; --input-font-size: 16px; --input-line-height: 24px; }\n.ds-input[data-size='XL'] {\n  --input-height: 56px; --input-font-size: 18px; --input-line-height: 24px;\n  --input-label-size: 14px; --input-label-height: 20px; --input-padding: 24px;\n}\n.ds-input__field {\n  position: relative;\n  height: var(--input-height);\n  border: 1px solid var(--input-border);\n  border-radius: var(--ds-token-border-radius-4);\n  background: var(--input-background);\n}\n.ds-input__control {\n  display: block; width: 100%; height: 100%; min-width: 0;\n  border: 0; outline: 0; border-radius: inherit;\n  margin: 0; padding: 0 var(--input-padding);\n  background: transparent; color: inherit;\n  font: inherit; font-size: var(--input-font-size); line-height: var(--input-line-height);\n  letter-spacing: .5px;\n}\n.ds-input__control::placeholder { color: var(--ds-token-color-input-text-placeholder); opacity: 1; }\n.ds-input__label {\n  position: absolute; top: 0; left: calc(var(--input-padding) - 4px);\n  transform: translateY(-50%); padding: 0 4px; max-width: calc(100% - 24px);\n  background: var(--input-background); color: var(--ds-token-color-input-text-label);\n  font-size: var(--input-label-size); line-height: var(--input-label-height);\n  letter-spacing: .4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;\n  cursor: text;\n}\n.ds-input[data-content='Label'] .ds-input__control:placeholder-shown:not(:focus) + .ds-input__label {\n  top: 50%; transform: translateY(-50%); background: transparent;\n  font-size: var(--input-font-size); line-height: var(--input-line-height); letter-spacing: .5px;\n}\n.ds-input[data-state='Enfocado'] .ds-input__field,\n.ds-input:not([data-state='Deshabilitado']) .ds-input__field:focus-within {\n  border-color: var(--ds-token-color-input-border-focus); box-shadow: inset 0 0 0 2px var(--ds-token-color-input-border-focus);\n}\n.ds-input[data-state='Enfocado'][data-content='Label'] .ds-input__control:placeholder-shown + .ds-input__label {\n  top: 0; font-size: var(--input-label-size); line-height: var(--input-label-height);\n  background: var(--input-background);\n}\n.ds-input[data-state='Error'] .ds-input__field,\n.ds-input[data-state='Error'] .ds-input__field:focus-within { border-color: var(--ds-token-color-input-border-error); box-shadow: none; }\n.ds-input[data-state='Error'] .ds-input__control { padding-right: 36px; }\n.ds-input__error-icon {\n  position: absolute; right: 2px; top: 50%; transform: translateY(-50%);\n  width: 24px; height: 24px; background: #e53935;\n  mask: url('./src/assets/error.svg') center / contain no-repeat;\n}\n.ds-input[data-state='Deshabilitado'] { --input-border: #b1b1b1; color: #6d6d6d; }\n.ds-input[data-state='Deshabilitado'] .ds-input__label { color: #6d6d6d; cursor: default; }\n.ds-input__control:disabled { cursor: not-allowed; opacity: 1; -webkit-text-fill-color: #6d6d6d; }\n.ds-input[data-style='Relleno'] .ds-input__field { border-width: 0 0 1px; border-radius: 4px 4px 0 0; }\n.ds-input[data-style='Relleno'][data-state='Deshabilitado'] { --input-background: var(--ds-token-color-input-background-disabled); }\n.ds-input[data-style='Relleno'] .ds-input__control { padding-top: var(--input-label-height); }\n.ds-input[data-style='Relleno'] .ds-input__label { top: 4px; transform: none; background: transparent; }\n.ds-input[data-style='Relleno'][data-content='Label'] .ds-input__control:placeholder-shown:not(:focus) { padding-top: 0; }\n.ds-input[data-style='Relleno'][data-state='Enfocado'] .ds-input__field,\n.ds-input[data-style='Relleno'] .ds-input__field:focus-within { box-shadow: inset 0 -2px var(--ds-token-color-input-border-focus); }\n.ds-input[data-style='Relleno'][data-state='Error'] .ds-input__field { box-shadow: none; }\n.ds-input[data-style='Relleno'][data-state='Enfocado'][data-content='Label'] .ds-input__control:placeholder-shown + .ds-input__label {\n  top: 4px; transform: none; background: transparent;\n}\n.ds-input__footer {\n  display: flex; align-items: start; gap: 8px; padding: 4px 16px 0;\n  margin-top: calc(56px - var(--input-height));\n  font-size: var(--input-label-size); line-height: var(--input-label-height); letter-spacing: .4px;\n  overflow-wrap: anywhere;\n}\n.ds-input__support { flex: 1; min-width: 0; }\n.ds-input__counter { margin-left: auto; flex-shrink: 0; white-space: nowrap; color: #6d6d6d; }\n.ds-input-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 40px 32px; max-width: 1100px; padding: 16px 0; font-family: var(--font-family-base); }\n.ds-input-gallery__item { min-width: 0; }\n.ds-input-gallery__caption { margin: 0 0 16px; font-size: 12px; line-height: 18px; color: #464646; }\n",
+                    "styleUrl": "../../../ds-input.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 63,
+                "rawdescription": "\n"
+            },
+            "extends": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": [
+                    {
+                        "name": "CommonModule",
+                        "type": "module"
+                    },
+                    {
+                        "name": "DsInputComponent",
+                        "type": "component",
+                        "description": "Campo de texto del sistema de diseño. El formulario que lo contiene controla la validación."
+                    }
+                ]
+            }
+        },
+        {
+            "name": "TokenCatalogComponent",
+            "id": "component-TokenCatalogComponent-4fb9d62e8e84b88bc359d4dfe5a9e9c48227ffb4b497b1ae73b0a7e6e38bfcdff1bc4b45217fb4723715c98e10347564d4561d1975fd7e155e345532423f424f",
+            "file": "src/app/components/token-catalog.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "ds-token-catalog",
+            "styleUrls": [
+                "../../../token-catalog.css"
+            ],
+            "styles": [],
+            "template": "<section class=\"token-catalog\" [attr.data-ds-theme]=\"mode\">\n  <div class=\"token-catalog__toolbar\">\n    <label>Buscar token\n      <input type=\"search\" placeholder=\"Nombre, referencia o valor…\" [value]=\"query\" (input)=\"query = inputValue($event)\" />\n    </label>\n    <label>Marca\n      <select [value]=\"mode\" (change)=\"mode = inputValue($event)\">\n        <option value=\"cliente-rico\">cliente-rico</option>\n        <option value=\"erecauda\">erecauda</option>\n      </select>\n    </label>\n  </div>\n  <p class=\"token-catalog__count\" aria-live=\"polite\">\n    {{ visibleTokens.length }} de {{ collectionTokens.length }} tokens · {{ collection === 'Componente' ? mode : 'Colección compartida entre marcas' }}\n  </p>\n  <div *ngIf=\"collection === 'Componente'\" class=\"token-catalog__samples\">\n    <p>Ejemplos conectados a los tokens de color:</p>\n    <ds-button label=\"Acción primaria\" [showIcon]=\"false\"></ds-button>\n    <ds-input label=\"Campo de texto\" state=\"focused\" content=\"label\" supportingText=\"El foco cambia con la marca.\"></ds-input>\n  </div>\n  <div class=\"token-catalog__table-wrap\">\n    <table [attr.aria-label]=\"'Tokens de ' + collection\">\n      <thead><tr><th scope=\"col\">Vista previa</th><th scope=\"col\">Token</th><th scope=\"col\">Valor</th><th scope=\"col\">Referencias</th></tr></thead>\n      <tbody>\n        <tr *ngFor=\"let token of visibleTokens\">\n          <td>\n            <div class=\"token-catalog__preview\" aria-hidden=\"true\">\n              <span *ngIf=\"token.type === 'color'\" class=\"token-catalog__swatch\" [style.backgroundColor]=\"previewColor(token)\"></span>\n              <span *ngIf=\"token.name.startsWith('border/radius/')\" class=\"token-catalog__radius\" [style.borderRadius.px]=\"resolved(token).value\"></span>\n              <span *ngIf=\"token.name.startsWith('font/')\" [style.fontWeight]=\"fontWeight(token)\" [style.fontSize.px]=\"fontSize(token)\" [style.fontFamily]=\"fontFamily(token)\">Aa</span>\n              <span *ngIf=\"token.type !== 'color' && !token.name.startsWith('border/radius/') && !token.name.startsWith('font/')\" class=\"token-catalog__measure\" [style.width.px]=\"measureWidth(token)\"></span>\n            </div>\n          </td>\n          <th scope=\"row\"><code>{{ token.name }}</code><small *ngIf=\"token.description\">{{ token.description }}</small></th>\n          <td><code>{{ tokenValue(token) }}</code></td>\n          <td>\n            <span class=\"token-catalog__chain\">{{ referenceChain(token) }}</span>\n            <code class=\"token-catalog__css-name\">{{ cssName(token.name) }}</code>\n          </td>\n        </tr>\n        <tr *ngIf=\"visibleTokens.length === 0\"><td colspan=\"4\">No se encontraron tokens. Probá con otro nombre, referencia o valor.</td></tr>\n      </tbody>\n    </table>\n  </div>\n</section>\n",
+            "templateUrl": [],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "coverageIgnore": false,
+                    "name": "collection",
+                    "defaultValue": "'Primitivo'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "line": 64,
+                    "type": "\"Primitivo\" | \"Semantico\" | \"Componente\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "mode",
+                    "coverageIgnore": false,
+                    "defaultValue": "'cliente-rico'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "\"cliente-rico\" | \"erecauda\"",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 66,
+                    "rawdescription": "\n"
+                },
+                {
+                    "name": "query",
+                    "coverageIgnore": false,
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 65,
+                    "rawdescription": "\n"
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "cssName",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 85,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "fontFamily",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string | null",
+                    "typeParameters": [],
+                    "line": 104,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "fontSize",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "number | null",
+                    "typeParameters": [],
+                    "line": 100,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "fontWeight",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string | number | null",
+                    "typeParameters": [],
+                    "line": 96,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "inputValue",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 81,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "measureWidth",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 92,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "previewColor",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 84,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "referenceChain",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 87,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "resolved",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 82,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "tokenValue",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 83,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "token",
+                            "type": "DesignToken",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "DsButtonComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "DsInputComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "<p>Catálogo navegable de los tokens que se importaron desde las variables de Figma.</p>\n",
+            "rawdescription": "\nCatálogo navegable de los tokens que se importaron desde las variables de Figma.",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input } from '@angular/core';\nimport { colorValue, cssName, displayValue, resolveToken, tokens } from '../../../token-utils';\nimport { DsButtonComponent } from './ds-button.component';\nimport { DsInputComponent } from './ds-input.component';\n\ntype DesignToken = (typeof tokens)[number];\n\n/** Catálogo navegable de los tokens que se importaron desde las variables de Figma. */\n@Component({\n  selector: 'ds-token-catalog',\n  standalone: true,\n  imports: [CommonModule, DsButtonComponent, DsInputComponent],\n  template: `\n    <section class=\"token-catalog\" [attr.data-ds-theme]=\"mode\">\n      <div class=\"token-catalog__toolbar\">\n        <label>Buscar token\n          <input type=\"search\" placeholder=\"Nombre, referencia o valor…\" [value]=\"query\" (input)=\"query = inputValue($event)\" />\n        </label>\n        <label>Marca\n          <select [value]=\"mode\" (change)=\"mode = inputValue($event)\">\n            <option value=\"cliente-rico\">cliente-rico</option>\n            <option value=\"erecauda\">erecauda</option>\n          </select>\n        </label>\n      </div>\n      <p class=\"token-catalog__count\" aria-live=\"polite\">\n        {{ visibleTokens.length }} de {{ collectionTokens.length }} tokens · {{ collection === 'Componente' ? mode : 'Colección compartida entre marcas' }}\n      </p>\n      <div *ngIf=\"collection === 'Componente'\" class=\"token-catalog__samples\">\n        <p>Ejemplos conectados a los tokens de color:</p>\n        <ds-button label=\"Acción primaria\" [showIcon]=\"false\"></ds-button>\n        <ds-input label=\"Campo de texto\" state=\"focused\" content=\"label\" supportingText=\"El foco cambia con la marca.\"></ds-input>\n      </div>\n      <div class=\"token-catalog__table-wrap\">\n        <table [attr.aria-label]=\"'Tokens de ' + collection\">\n          <thead><tr><th scope=\"col\">Vista previa</th><th scope=\"col\">Token</th><th scope=\"col\">Valor</th><th scope=\"col\">Referencias</th></tr></thead>\n          <tbody>\n            <tr *ngFor=\"let token of visibleTokens\">\n              <td>\n                <div class=\"token-catalog__preview\" aria-hidden=\"true\">\n                  <span *ngIf=\"token.type === 'color'\" class=\"token-catalog__swatch\" [style.backgroundColor]=\"previewColor(token)\"></span>\n                  <span *ngIf=\"token.name.startsWith('border/radius/')\" class=\"token-catalog__radius\" [style.borderRadius.px]=\"resolved(token).value\"></span>\n                  <span *ngIf=\"token.name.startsWith('font/')\" [style.fontWeight]=\"fontWeight(token)\" [style.fontSize.px]=\"fontSize(token)\" [style.fontFamily]=\"fontFamily(token)\">Aa</span>\n                  <span *ngIf=\"token.type !== 'color' && !token.name.startsWith('border/radius/') && !token.name.startsWith('font/')\" class=\"token-catalog__measure\" [style.width.px]=\"measureWidth(token)\"></span>\n                </div>\n              </td>\n              <th scope=\"row\"><code>{{ token.name }}</code><small *ngIf=\"token.description\">{{ token.description }}</small></th>\n              <td><code>{{ tokenValue(token) }}</code></td>\n              <td>\n                <span class=\"token-catalog__chain\">{{ referenceChain(token) }}</span>\n                <code class=\"token-catalog__css-name\">{{ cssName(token.name) }}</code>\n              </td>\n            </tr>\n            <tr *ngIf=\"visibleTokens.length === 0\"><td colspan=\"4\">No se encontraron tokens. Probá con otro nombre, referencia o valor.</td></tr>\n          </tbody>\n        </table>\n      </div>\n    </section>\n  `,\n  styleUrls: ['../../../token-catalog.css'],\n})\nexport class TokenCatalogComponent {\n  @Input() collection: 'Primitivo' | 'Semantico' | 'Componente' = 'Primitivo';\n  query = '';\n  mode: 'cliente-rico' | 'erecauda' = 'cliente-rico';\n\n  get collectionTokens(): DesignToken[] {\n    return tokens.filter(token => token.collection === this.collection);\n  }\n\n  get visibleTokens(): DesignToken[] {\n    const query = this.query.trim().toLowerCase();\n    if (!query) return this.collectionTokens;\n    return this.collectionTokens.filter(token => {\n      const resolved = resolveToken(token.name, this.mode);\n      return [token.name, this.tokenValue(token), ...resolved.chain, token.description ?? ''].join(' ').toLowerCase().includes(query);\n    });\n  }\n\n  inputValue(event: Event): string { return (event.target as HTMLInputElement | HTMLSelectElement).value; }\n  resolved(token: DesignToken) { return resolveToken(token.name, this.mode); }\n  tokenValue(token: DesignToken): string { return displayValue(token, this.resolved(token)); }\n  previewColor(token: DesignToken): string { return colorValue(this.resolved(token)); }\n  cssName(name: string): string { return cssName(name); }\n\n  referenceChain(token: DesignToken): string {\n    const chain = this.resolved(token).chain;\n    return chain.length > 1 ? chain.slice(1).join(' → ') : 'Valor directo';\n  }\n\n  measureWidth(token: DesignToken): number {\n    return Math.max(4, Math.min(Number(this.resolved(token).value), 100));\n  }\n\n  fontWeight(token: DesignToken): string | number | null {\n    return token.name.startsWith('font/weight/') ? this.resolved(token).value : null;\n  }\n\n  fontSize(token: DesignToken): number | null {\n    return token.name.startsWith('font/size/') ? Math.min(Number(this.resolved(token).value), 40) : null;\n  }\n\n  fontFamily(token: DesignToken): string | null {\n    return token.name.startsWith('font/family/') ? String(this.resolved(token).value) : null;\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import './design-tokens.css';\n.token-catalog { color: #222; font: 14px/1.5 Roboto, Arial, sans-serif; max-width: 1280px; }\n.token-catalog * { box-sizing: border-box; }\n.token-catalog__toolbar { display: flex; flex-wrap: wrap; gap: 20px; align-items: end; padding: 16px; background: #f8f8f8; border: 1px solid #ddd; border-radius: 8px; }\n.token-catalog__toolbar label { display: grid; gap: 6px; font-weight: 500; }\n.token-catalog__toolbar label:first-child { flex: 1; min-width: 200px; }\n.token-catalog__toolbar input, .token-catalog__toolbar select { min-height: 40px; padding: 8px 12px; border: 1px solid #6d6d6d; border-radius: 4px; background: #fff; color: #222; font: inherit; }\n.token-catalog__toolbar input:focus-visible, .token-catalog__toolbar select:focus-visible { outline: 2px solid #3061af; outline-offset: 2px; }\n.token-catalog__count { color: #464646; margin: 16px 0; }\n.token-catalog__table-wrap { overflow: auto; }\n.token-catalog table { width: 100%; border-collapse: collapse; text-align: left; table-layout: auto; }\n.token-catalog thead { background: #f4f6f8; }\n.token-catalog th, .token-catalog td { padding: 14px 12px; border-bottom: 1px solid #ddd; vertical-align: top; font-weight: 400; }\n.token-catalog thead th { font-weight: 500; }\n.token-catalog code { font: 12px/1.6 ui-monospace, monospace; overflow-wrap: anywhere; white-space: normal; }\n.token-catalog small { display: block; margin-top: 6px; font-size: 12px; color: #555; max-width: 340px; }\n.token-catalog__preview { width: 80px; min-height: 36px; display: flex; align-items: center; background: repeating-conic-gradient(#eee 0 25%, white 0 50%) 0/12px 12px; border: 1px solid #ddd; border-radius: 4px; overflow: hidden; }\n.token-catalog__swatch { display: block; width: 80px; height: 36px; }\n.token-catalog__radius { display: block; width: 48px; height: 36px; background: #3061af; }\n.token-catalog__measure { display: block; height: 12px; background: #3061af; }\n.token-catalog__chain { display: block; max-width: 400px; font-size: 12px; overflow-wrap: anywhere; }\n.token-catalog__css-name { display: block; color: #666; margin-top: 6px; }\n.token-catalog__samples { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin: 24px 0; }\n.token-catalog__samples:empty { display: none; }\n.token-catalog__samples p { flex-basis: 100%; margin: 0; }\n@media (max-width: 600px) { .token-catalog table { min-width: 680px; } }\n",
+                    "styleUrl": "../../../token-catalog.css"
+                }
+            ],
+            "stylesData": "",
+            "jsdoctags": [
+                {
+                    "pos": 356,
+                    "end": 443,
+                    "kind": 321,
+                    "id": 0,
+                    "flags": 16777216,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "comment": "Catálogo navegable de los tokens que se importaron desde las variables de Figma."
+                }
+            ],
+            "extends": [],
+            "accessors": {
+                "collectionTokens": {
+                    "name": "collectionTokens",
+                    "getSignature": {
+                        "name": "collectionTokens",
+                        "type": "[]",
+                        "returnType": "DesignToken[]",
+                        "line": 68,
+                        "rawdescription": "\n",
+                        "description": ""
+                    }
+                },
+                "visibleTokens": {
+                    "name": "visibleTokens",
+                    "getSignature": {
+                        "name": "visibleTokens",
+                        "type": "[]",
+                        "returnType": "DesignToken[]",
+                        "line": 72,
+                        "rawdescription": "\n",
+                        "description": ""
+                    }
+                }
+            },
+            "relationships": {
+                "incoming": [],
+                "outgoing": [
+                    {
+                        "name": "CommonModule",
+                        "type": "module"
+                    },
+                    {
+                        "name": "DsButtonComponent",
+                        "type": "component",
+                        "description": "Botón del sistema de diseño SIAF. No requiere Bootstrap. La jerarquía visual se configura con `variant`; `disabled` desactiva el control..."
+                    },
+                    {
+                        "name": "DsInputComponent",
+                        "type": "component",
+                        "description": "Campo de texto del sistema de diseño. El formulario que lo contiene controla la validación."
+                    }
+                ]
+            }
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "Componentes",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/tokens.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ args: { collection: 'Componente' } }"
+            },
+            {
+                "name": "ConContador",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-input.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ name: 'Con contador', args: { showCounter: true } }"
+            },
+            {
+                "name": "ConContenido",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-input.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ name: 'Con contenido', args: { content: 'input', value: 'Ejemplo' } }"
+            },
+            {
+                "name": "config",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": ".storybook/main.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StorybookConfig",
+                "defaultValue": "{\n  stories: ['../*.mdx', '../src/**/*.stories.ts'],\n  addons: ['@storybook/addon-docs'],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  staticDirs: ['../src/assets'],\n}"
+            },
+            {
+                "name": "Deshabilitado",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-button.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ args: { disabled: true, state: 'disabled' } }"
+            },
+            {
+                "name": "Deshabilitado",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-input.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ args: { state: 'disabled' } }"
+            },
+            {
+                "name": "Enfocado",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-input.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ args: { state: 'focused', content: 'label' } }"
+            },
+            {
+                "name": "Error",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-input.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ args: { state: 'error', supportingText: 'Revisá el dato ingresado.' } }"
+            },
+            {
+                "name": "IconosTodasLasVariantes",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-button.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  name: 'Íconos · todas las variantes',\n  render: () => ({ component: ButtonGalleryComponent, props: { iconOnly: true } }),\n  parameters: { controls: { disable: true }, docs: { source: { code: '<ds-button [variant]=\"variant\" [size]=\"size\" [iconOnly]=\"true\" label=\"Acción de ejemplo\"></ds-button>' } } },\n}"
+            },
+            {
+                "name": "Link",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-button.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ args: { variant: 'link' } }"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-button.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<DsButtonComponent>",
+                "defaultValue": "{\n  title: 'Componentes/Botones',\n  component: DsButtonComponent,\n  parameters: {\n    docs: {\n      description: {\n        component: 'Botones actualizados de la página 06. Botones de Figma DGSIAF. El hover funciona al pasar el mouse; el control Estado permite fijarlo para revisar el diseño. Disabled usa el atributo nativo y no ejecuta acciones. El estilo Link representa una acción con apariencia de enlace; para navegar en un producto se debe usar un enlace con destino real.',\n      },\n      source: {\n        code: `<div [attr.data-brand]=\"dsBrand\">\n  <ds-button\n    [variant]=\"variant\"\n    [size]=\"size\"\n    [disabled]=\"disabled\"\n    [showIcon]=\"showIcon\"\n  >\n    {{ label }}\n  </ds-button>\n</div>`,\n      },\n    },\n  },\n  args: {\n    variant: 'primary', size: 'M', state: 'default', label: 'Label',\n    showIcon: true, iconOnly: false, disabled: false, clicked: fn(),\n  },\n  argTypes: {\n    variant: { name: 'Variante', description: 'Jerarquía de la acción. Peligro se reserva para consecuencias destructivas.', control: 'select', options: ['primary', 'secondary', 'tertiary', 'link', 'danger'], table: { defaultValue: { summary: 'primary' } } },\n    size: { name: 'Tamaño', description: 'S, M, L o XL. La jerarquía se define por la variante, no por el tamaño.', control: 'select', options: ['S', 'M', 'L', 'XL'] },\n    state: { name: 'Estado visual', description: 'Hover permite inspeccionar la apariencia; Disabled desactiva también el botón.', control: 'select', options: ['default', 'hover', 'disabled'] },\n    disabled: { name: 'Deshabilitado', description: 'Desactiva el control nativo y evita que emita clics.', control: 'boolean' },\n    label: { name: 'Etiqueta / nombre accesible', description: 'Acción concreta; en solo ícono, proporciona el nombre accesible.', control: 'text' },\n    showIcon: { name: 'Mostrar ícono', description: 'Ícono ilustrativo a la izquierda del texto.', control: 'boolean' },\n    iconOnly: { name: 'Solo ícono', description: 'Requiere una etiqueta accesible en `label`.', control: 'boolean' },\n    clicked: { name: 'Al hacer clic', description: 'Evento que emite el componente al activarse.', control: false },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-input.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<DsInputComponent>",
+                "defaultValue": "{\n  title: 'Componentes/Input',\n  component: DsInputComponent,\n  parameters: {\n    docs: {\n      description: {\n        component: 'Campo de texto basado en Text Field de Figma DGSIAF. Escribí o usá Tab para probar el foco real. El estado Enfocado permite comparar su apariencia sin mover el teclado. El error se controla desde el formulario; no aplica reglas de validación propias.',\n      },\n      source: {\n        code: `<ds-input\n  [variant]=\"variant\"\n  [size]=\"size\"\n  [state]=\"state\"\n  [disabled]=\"disabled\"\n  [label]=\"label\"\n  [placeholder]=\"placeholder\"\n  [(value)]=\"value\"\n  [supportingText]=\"supportingText\"\n></ds-input>`,\n      },\n    },\n  },\n  args: {\n    variant: 'outlined', state: 'default', disabled: false, content: 'placeholder', size: 'M',\n    label: 'Label', placeholder: 'Placeholder', value: '', supportingText: 'Supporting text',\n    showSupportingText: true, showCounter: false, maxLength: 10, fullWidth: false,\n  },\n  argTypes: {\n    variant: { name: 'Estilo', control: 'select', options: ['outlined', 'filled'] },\n    state: { name: 'Estado', control: 'select', options: ['default', 'focused', 'error', 'disabled'] },\n    disabled: { name: 'Deshabilitado', description: 'Bloquea la edición del campo.', control: 'boolean' },\n    content: { name: 'Contenido inicial', control: 'select', options: ['placeholder', 'label', 'input'], description: 'Input muestra un valor inicial; Label usa etiqueta flotante.' },\n    size: { name: 'Tamaño', control: 'select', options: ['S', 'M', 'L', 'XL'] },\n    label: { description: 'Etiqueta asociada al campo. Identifica el dato esperado y no se reemplaza por el placeholder.', control: 'text' },\n    placeholder: { description: 'Ejemplo o pista del formato esperado.', control: 'text' },\n    value: { description: 'Valor editable. El formulario puede escuchar valueChange para guardar el cambio.', control: 'text' },\n    supportingText: { name: 'Texto de soporte', description: 'Ayuda breve y útil; en Error explica qué corregir. Se asocia con aria-describedby.', control: 'text' },\n    showSupportingText: { name: 'Mostrar texto de soporte', control: 'boolean' },\n    showCounter: { name: 'Mostrar contador', control: 'boolean' },\n    maxLength: { name: 'Máximo de caracteres', control: { type: 'number', min: 1 } },\n    fullWidth: { name: 'Ocupar ancho disponible', control: 'boolean' },\n    valueChange: { name: 'Al cambiar el valor', description: 'Emite el texto actualizado para que el formulario lo guarde.', control: false },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/tokens.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<TokenCatalogComponent>",
+                "defaultValue": "{\n  title: 'Tokens/Catálogo',\n  component: TokenCatalogComponent,\n  parameters: { layout: 'padded', controls: { disable: true } },\n}"
+            },
+            {
+                "name": "nextInputId",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-input.component.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "number",
+                "defaultValue": "0"
+            },
+            {
+                "name": "Peligro",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-button.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ args: { variant: 'danger' } }"
+            },
+            {
+                "name": "Playground",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-button.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ name: 'Probar botón' }"
+            },
+            {
+                "name": "Playground",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-input.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ name: 'Probar componente' }"
+            },
+            {
+                "name": "Primitivos",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/tokens.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ args: { collection: 'Primitivo' } }"
+            },
+            {
+                "name": "Relleno",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-input.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ args: { variant: 'filled' } }"
+            },
+            {
+                "name": "Secundario",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-button.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ args: { variant: 'secondary' } }"
+            },
+            {
+                "name": "Semanticos",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/tokens.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ name: 'Semánticos', args: { collection: 'Semantico' } }"
+            },
+            {
+                "name": "SinIcono",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-button.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ name: 'Sin ícono', args: { showIcon: false } }"
+            },
+            {
+                "name": "SoloIcono",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-button.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ name: 'Probar botón de ícono', args: { iconOnly: true, label: 'Acción de ejemplo' } }"
+            },
+            {
+                "name": "STATE_BY_NAME",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-button.component.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Record<ButtonState, string>",
+                "defaultValue": "{\n  default: 'Default',\n  hover: 'Hover',\n  disabled: 'Disabled',\n}"
+            },
+            {
+                "name": "STYLE_BY_VARIANT",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-button.component.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Record<ButtonVariant, string>",
+                "defaultValue": "{\n  primary: 'Primario',\n  secondary: 'Secundario',\n  tertiary: 'Terciario',\n  link: 'Link',\n  danger: 'Peligro',\n}"
+            },
+            {
+                "name": "Terciario",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-button.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{ args: { variant: 'tertiary' } }"
+            },
+            {
+                "name": "TodasLasVariantes",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-button.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  name: 'Botones · todas las variantes',\n  render: () => ({ component: ButtonGalleryComponent }),\n  parameters: { controls: { disable: true }, docs: { source: { code: '<ds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Label</ds-button>' } } },\n}"
+            },
+            {
+                "name": "TodasLasVariantes",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/ds-input.stories.ts",
+                "coverageIgnore": false,
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  name: 'Todas las variantes',\n  render: () => ({ component: InputGalleryComponent }),\n  parameters: { controls: { disable: true }, docs: { source: { code: '<ds-input [variant]=\"variant\" [size]=\"size\" [state]=\"state\" [label]=\"label\"></ds-input>' } } },\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [
+            {
+                "name": "ButtonSize",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "coverageIgnore": false,
+                "rawtype": "\"S\" | \"M\" | \"L\" | \"XL\"",
+                "file": "src/app/components/ds-button.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "kind": 193
+            },
+            {
+                "name": "ButtonState",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "coverageIgnore": false,
+                "rawtype": "\"default\" | \"hover\" | \"disabled\"",
+                "file": "src/app/components/ds-button.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "kind": 193
+            },
+            {
+                "name": "ButtonVariant",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "coverageIgnore": false,
+                "rawtype": "\"primary\" | \"secondary\" | \"tertiary\" | \"link\" | \"danger\"",
+                "file": "src/app/components/ds-button.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "kind": 193
+            },
+            {
+                "name": "DesignToken",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "coverageIgnore": false,
+                "rawtype": "typeof tokens['number']",
+                "file": "src/app/components/token-catalog.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "kind": 200
+            },
+            {
+                "name": "InputContent",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "coverageIgnore": false,
+                "rawtype": "\"placeholder\" | \"label\" | \"input\"",
+                "file": "src/app/components/ds-input.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "kind": 193
+            },
+            {
+                "name": "InputSize",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "coverageIgnore": false,
+                "rawtype": "\"S\" | \"M\" | \"L\" | \"XL\"",
+                "file": "src/app/components/ds-input.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "kind": 193
+            },
+            {
+                "name": "InputState",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "coverageIgnore": false,
+                "rawtype": "\"default\" | \"focused\" | \"error\" | \"disabled\"",
+                "file": "src/app/components/ds-input.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "kind": 193
+            },
+            {
+                "name": "InputVariant",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "coverageIgnore": false,
+                "rawtype": "\"outlined\" | \"filled\"",
+                "file": "src/app/components/ds-input.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "kind": 193
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "coverageIgnore": false,
+                "rawtype": "StoryObj<DsButtonComponent>",
+                "file": "src/app/components/ds-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "coverageIgnore": false,
+                "rawtype": "StoryObj<DsInputComponent>",
+                "file": "src/app/components/ds-input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "coverageIgnore": false,
+                "rawtype": "StoryObj<TokenCatalogComponent>",
+                "file": "src/app/components/tokens.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "kind": 184
+            }
+        ],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/app/components/tokens.stories.ts": [
+                {
+                    "name": "Componentes",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/tokens.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ args: { collection: 'Componente' } }"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/tokens.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<TokenCatalogComponent>",
+                    "defaultValue": "{\n  title: 'Tokens/Catálogo',\n  component: TokenCatalogComponent,\n  parameters: { layout: 'padded', controls: { disable: true } },\n}"
+                },
+                {
+                    "name": "Primitivos",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/tokens.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ args: { collection: 'Primitivo' } }"
+                },
+                {
+                    "name": "Semanticos",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/tokens.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ name: 'Semánticos', args: { collection: 'Semantico' } }"
+                }
+            ],
+            "src/app/components/ds-input.stories.ts": [
+                {
+                    "name": "ConContador",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-input.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ name: 'Con contador', args: { showCounter: true } }"
+                },
+                {
+                    "name": "ConContenido",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-input.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ name: 'Con contenido', args: { content: 'input', value: 'Ejemplo' } }"
+                },
+                {
+                    "name": "Deshabilitado",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-input.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ args: { state: 'disabled' } }"
+                },
+                {
+                    "name": "Enfocado",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-input.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ args: { state: 'focused', content: 'label' } }"
+                },
+                {
+                    "name": "Error",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-input.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ args: { state: 'error', supportingText: 'Revisá el dato ingresado.' } }"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-input.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<DsInputComponent>",
+                    "defaultValue": "{\n  title: 'Componentes/Input',\n  component: DsInputComponent,\n  parameters: {\n    docs: {\n      description: {\n        component: 'Campo de texto basado en Text Field de Figma DGSIAF. Escribí o usá Tab para probar el foco real. El estado Enfocado permite comparar su apariencia sin mover el teclado. El error se controla desde el formulario; no aplica reglas de validación propias.',\n      },\n      source: {\n        code: `<ds-input\n  [variant]=\"variant\"\n  [size]=\"size\"\n  [state]=\"state\"\n  [disabled]=\"disabled\"\n  [label]=\"label\"\n  [placeholder]=\"placeholder\"\n  [(value)]=\"value\"\n  [supportingText]=\"supportingText\"\n></ds-input>`,\n      },\n    },\n  },\n  args: {\n    variant: 'outlined', state: 'default', disabled: false, content: 'placeholder', size: 'M',\n    label: 'Label', placeholder: 'Placeholder', value: '', supportingText: 'Supporting text',\n    showSupportingText: true, showCounter: false, maxLength: 10, fullWidth: false,\n  },\n  argTypes: {\n    variant: { name: 'Estilo', control: 'select', options: ['outlined', 'filled'] },\n    state: { name: 'Estado', control: 'select', options: ['default', 'focused', 'error', 'disabled'] },\n    disabled: { name: 'Deshabilitado', description: 'Bloquea la edición del campo.', control: 'boolean' },\n    content: { name: 'Contenido inicial', control: 'select', options: ['placeholder', 'label', 'input'], description: 'Input muestra un valor inicial; Label usa etiqueta flotante.' },\n    size: { name: 'Tamaño', control: 'select', options: ['S', 'M', 'L', 'XL'] },\n    label: { description: 'Etiqueta asociada al campo. Identifica el dato esperado y no se reemplaza por el placeholder.', control: 'text' },\n    placeholder: { description: 'Ejemplo o pista del formato esperado.', control: 'text' },\n    value: { description: 'Valor editable. El formulario puede escuchar valueChange para guardar el cambio.', control: 'text' },\n    supportingText: { name: 'Texto de soporte', description: 'Ayuda breve y útil; en Error explica qué corregir. Se asocia con aria-describedby.', control: 'text' },\n    showSupportingText: { name: 'Mostrar texto de soporte', control: 'boolean' },\n    showCounter: { name: 'Mostrar contador', control: 'boolean' },\n    maxLength: { name: 'Máximo de caracteres', control: { type: 'number', min: 1 } },\n    fullWidth: { name: 'Ocupar ancho disponible', control: 'boolean' },\n    valueChange: { name: 'Al cambiar el valor', description: 'Emite el texto actualizado para que el formulario lo guarde.', control: false },\n  },\n}"
+                },
+                {
+                    "name": "Playground",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-input.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ name: 'Probar componente' }"
+                },
+                {
+                    "name": "Relleno",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-input.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ args: { variant: 'filled' } }"
+                },
+                {
+                    "name": "TodasLasVariantes",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-input.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  name: 'Todas las variantes',\n  render: () => ({ component: InputGalleryComponent }),\n  parameters: { controls: { disable: true }, docs: { source: { code: '<ds-input [variant]=\"variant\" [size]=\"size\" [state]=\"state\" [label]=\"label\"></ds-input>' } } },\n}"
+                }
+            ],
+            ".storybook/main.ts": [
+                {
+                    "name": "config",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": ".storybook/main.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StorybookConfig",
+                    "defaultValue": "{\n  stories: ['../*.mdx', '../src/**/*.stories.ts'],\n  addons: ['@storybook/addon-docs'],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  staticDirs: ['../src/assets'],\n}"
+                }
+            ],
+            "src/app/components/ds-button.stories.ts": [
+                {
+                    "name": "Deshabilitado",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-button.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ args: { disabled: true, state: 'disabled' } }"
+                },
+                {
+                    "name": "IconosTodasLasVariantes",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-button.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  name: 'Íconos · todas las variantes',\n  render: () => ({ component: ButtonGalleryComponent, props: { iconOnly: true } }),\n  parameters: { controls: { disable: true }, docs: { source: { code: '<ds-button [variant]=\"variant\" [size]=\"size\" [iconOnly]=\"true\" label=\"Acción de ejemplo\"></ds-button>' } } },\n}"
+                },
+                {
+                    "name": "Link",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-button.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ args: { variant: 'link' } }"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-button.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<DsButtonComponent>",
+                    "defaultValue": "{\n  title: 'Componentes/Botones',\n  component: DsButtonComponent,\n  parameters: {\n    docs: {\n      description: {\n        component: 'Botones actualizados de la página 06. Botones de Figma DGSIAF. El hover funciona al pasar el mouse; el control Estado permite fijarlo para revisar el diseño. Disabled usa el atributo nativo y no ejecuta acciones. El estilo Link representa una acción con apariencia de enlace; para navegar en un producto se debe usar un enlace con destino real.',\n      },\n      source: {\n        code: `<div [attr.data-brand]=\"dsBrand\">\n  <ds-button\n    [variant]=\"variant\"\n    [size]=\"size\"\n    [disabled]=\"disabled\"\n    [showIcon]=\"showIcon\"\n  >\n    {{ label }}\n  </ds-button>\n</div>`,\n      },\n    },\n  },\n  args: {\n    variant: 'primary', size: 'M', state: 'default', label: 'Label',\n    showIcon: true, iconOnly: false, disabled: false, clicked: fn(),\n  },\n  argTypes: {\n    variant: { name: 'Variante', description: 'Jerarquía de la acción. Peligro se reserva para consecuencias destructivas.', control: 'select', options: ['primary', 'secondary', 'tertiary', 'link', 'danger'], table: { defaultValue: { summary: 'primary' } } },\n    size: { name: 'Tamaño', description: 'S, M, L o XL. La jerarquía se define por la variante, no por el tamaño.', control: 'select', options: ['S', 'M', 'L', 'XL'] },\n    state: { name: 'Estado visual', description: 'Hover permite inspeccionar la apariencia; Disabled desactiva también el botón.', control: 'select', options: ['default', 'hover', 'disabled'] },\n    disabled: { name: 'Deshabilitado', description: 'Desactiva el control nativo y evita que emita clics.', control: 'boolean' },\n    label: { name: 'Etiqueta / nombre accesible', description: 'Acción concreta; en solo ícono, proporciona el nombre accesible.', control: 'text' },\n    showIcon: { name: 'Mostrar ícono', description: 'Ícono ilustrativo a la izquierda del texto.', control: 'boolean' },\n    iconOnly: { name: 'Solo ícono', description: 'Requiere una etiqueta accesible en `label`.', control: 'boolean' },\n    clicked: { name: 'Al hacer clic', description: 'Evento que emite el componente al activarse.', control: false },\n  },\n}"
+                },
+                {
+                    "name": "Peligro",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-button.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ args: { variant: 'danger' } }"
+                },
+                {
+                    "name": "Playground",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-button.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ name: 'Probar botón' }"
+                },
+                {
+                    "name": "Secundario",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-button.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ args: { variant: 'secondary' } }"
+                },
+                {
+                    "name": "SinIcono",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-button.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ name: 'Sin ícono', args: { showIcon: false } }"
+                },
+                {
+                    "name": "SoloIcono",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-button.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ name: 'Probar botón de ícono', args: { iconOnly: true, label: 'Acción de ejemplo' } }"
+                },
+                {
+                    "name": "Terciario",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-button.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{ args: { variant: 'tertiary' } }"
+                },
+                {
+                    "name": "TodasLasVariantes",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-button.stories.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  name: 'Botones · todas las variantes',\n  render: () => ({ component: ButtonGalleryComponent }),\n  parameters: { controls: { disable: true }, docs: { source: { code: '<ds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Label</ds-button>' } } },\n}"
+                }
+            ],
+            "src/app/components/ds-input.component.ts": [
+                {
+                    "name": "nextInputId",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-input.component.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "defaultValue": "0"
+                }
+            ],
+            "src/app/components/ds-button.component.ts": [
+                {
+                    "name": "STATE_BY_NAME",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-button.component.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Record<ButtonState, string>",
+                    "defaultValue": "{\n  default: 'Default',\n  hover: 'Hover',\n  disabled: 'Disabled',\n}"
+                },
+                {
+                    "name": "STYLE_BY_VARIANT",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/ds-button.component.ts",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Record<ButtonVariant, string>",
+                    "defaultValue": "{\n  primary: 'Primario',\n  secondary: 'Secundario',\n  tertiary: 'Terciario',\n  link: 'Link',\n  danger: 'Peligro',\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {
+            "src/app/components/ds-button.component.ts": [
+                {
+                    "name": "ButtonSize",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "coverageIgnore": false,
+                    "rawtype": "\"S\" | \"M\" | \"L\" | \"XL\"",
+                    "file": "src/app/components/ds-button.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "kind": 193
+                },
+                {
+                    "name": "ButtonState",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "coverageIgnore": false,
+                    "rawtype": "\"default\" | \"hover\" | \"disabled\"",
+                    "file": "src/app/components/ds-button.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "kind": 193
+                },
+                {
+                    "name": "ButtonVariant",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "coverageIgnore": false,
+                    "rawtype": "\"primary\" | \"secondary\" | \"tertiary\" | \"link\" | \"danger\"",
+                    "file": "src/app/components/ds-button.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "kind": 193
+                }
+            ],
+            "src/app/components/token-catalog.component.ts": [
+                {
+                    "name": "DesignToken",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "coverageIgnore": false,
+                    "rawtype": "typeof tokens['number']",
+                    "file": "src/app/components/token-catalog.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "kind": 200
+                }
+            ],
+            "src/app/components/ds-input.component.ts": [
+                {
+                    "name": "InputContent",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "coverageIgnore": false,
+                    "rawtype": "\"placeholder\" | \"label\" | \"input\"",
+                    "file": "src/app/components/ds-input.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "kind": 193
+                },
+                {
+                    "name": "InputSize",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "coverageIgnore": false,
+                    "rawtype": "\"S\" | \"M\" | \"L\" | \"XL\"",
+                    "file": "src/app/components/ds-input.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "kind": 193
+                },
+                {
+                    "name": "InputState",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "coverageIgnore": false,
+                    "rawtype": "\"default\" | \"focused\" | \"error\" | \"disabled\"",
+                    "file": "src/app/components/ds-input.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "kind": 193
+                },
+                {
+                    "name": "InputVariant",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "coverageIgnore": false,
+                    "rawtype": "\"outlined\" | \"filled\"",
+                    "file": "src/app/components/ds-input.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "kind": 193
+                }
+            ],
+            "src/app/components/ds-button.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "coverageIgnore": false,
+                    "rawtype": "StoryObj<DsButtonComponent>",
+                    "file": "src/app/components/ds-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "src/app/components/ds-input.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "coverageIgnore": false,
+                    "rawtype": "StoryObj<DsInputComponent>",
+                    "file": "src/app/components/ds-input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "src/app/components/tokens.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "coverageIgnore": false,
+                    "rawtype": "StoryObj<TokenCatalogComponent>",
+                    "file": "src/app/components/tokens.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ]
+        }
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "children": []
+    },
+    "coverage": {
+        "count": 4,
+        "status": "low",
+        "files": [
+            {
+                "filePath": ".storybook/main.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "config",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/component-galleries.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonGalleryComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/component-galleries.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "InputGalleryComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DsButtonComponent",
+                "coveragePercent": 100,
+                "coverageCount": "9/9",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/app/components/ds-button.component.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "STATE_BY_NAME",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.component.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "STYLE_BY_VARIANT",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.component.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "ButtonSize",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.component.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "ButtonState",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.component.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "ButtonVariant",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Deshabilitado",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconosTodasLasVariantes",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Link",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Peligro",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Playground",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secundario",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SinIcono",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SoloIcono",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Terciario",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TodasLasVariantes",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-button.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DsInputComponent",
+                "coveragePercent": 78,
+                "coverageCount": "15/19",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/app/components/ds-input.component.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "nextInputId",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.component.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "InputContent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.component.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "InputSize",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.component.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "InputState",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.component.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "InputVariant",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ConContador",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ConContenido",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Deshabilitado",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Enfocado",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Error",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Playground",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Relleno",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TodasLasVariantes",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/ds-input.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/token-catalog.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TokenCatalogComponent",
+                "coveragePercent": 7,
+                "coverageCount": "1/14",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/token-catalog.component.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "DesignToken",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/tokens.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Componentes",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/tokens.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/tokens.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primitivos",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/tokens.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Semanticos",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/tokens.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

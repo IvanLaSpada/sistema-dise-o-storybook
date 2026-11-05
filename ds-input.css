@@ -1,7 +1,6 @@
-@import './tokens.css';
 @font-face {
   font-family: 'Roboto'; font-style: normal; font-weight: 400;
-  font-display: swap; src: url('./assets/roboto-regular.ttf') format('truetype');
+  font-display: swap; src: url('./src/assets/roboto-regular.ttf') format('truetype');
 }
 
 /* Valores del set Text Field, página 07. Inputs, en Figma DGSIAF. */
@@ -74,7 +73,7 @@
 .ds-input__error-icon {
   position: absolute; right: 2px; top: 50%; transform: translateY(-50%);
   width: 24px; height: 24px; background: #e53935;
-  mask: url('./assets/error.svg') center / contain no-repeat;
+  mask: url('./src/assets/error.svg') center / contain no-repeat;
 }
 .ds-input[data-state='Deshabilitado'] { --input-border: #b1b1b1; color: #6d6d6d; }
 .ds-input[data-state='Deshabilitado'] .ds-input__label { color: #6d6d6d; cursor: default; }
