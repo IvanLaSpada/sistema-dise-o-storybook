@@ -18,8 +18,8 @@
           "type": "color",
           "values": {
             "cliente-rico": {
-              "ref": "palette/brand/cliente-rico/blue/500",
-              "observed": "#3061AF"
+              "ref": "palette/red/500",
+              "observed": "#E53935"
             },
             "erecauda": {
               "ref": "palette/brand/erecauda/green/500",
@@ -33,8 +33,8 @@
           "type": "color",
           "values": {
             "cliente-rico": {
-              "ref": "palette/brand/cliente-rico/blue/400",
-              "observed": "#3F75CE"
+              "ref": "palette/red/400",
+              "observed": "#EA5A56"
             },
             "erecauda": {
               "ref": "palette/brand/erecauda/green/400",
@@ -1800,7 +1800,7 @@
           "values": {
             "Sistema de Diseño": {
               "value": "#FFFFFF",
-              "alpha": 0.0
+              "alpha": 0
             }
           },
           "description": "Paleta marca Cliente Rico — blue 0. Token primitivo, no usar directamente en componentes"
@@ -1921,7 +1921,7 @@
           "values": {
             "Sistema de Diseño": {
               "value": "#FFFFFF",
-              "alpha": 0.0
+              "alpha": 0
             }
           },
           "description": "Paleta marca eRecauda — green 0. Token primitivo, no usar directamente en componentes"
@@ -2559,7 +2559,7 @@
           "values": {
             "Sistema de Diseño": {
               "value": "#156C46",
-              "alpha": 1.0
+              "alpha": 1
             }
           },
           "description": ""
